@@ -1,19 +1,17 @@
 ---
-title: "csweb"
+title: "chrisenv"
+format:
+  html:
+    css: resources/css/cube.css
 ---
 
-This is a Quarto website combined with a git publishing workflow. In Progress 3.
-
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
-
-```{r}
-library(palmerpenguins)
-library(gt)
-
-penguins %>%
-  gt() %>%
-  tab_header(
-    title = "Penguins",
-    subtitle = "A dataset of penguins"
-  )
-```
+::: {.cube-container}
+<div id="cube">
+  <div class="face front">quarto</div>
+  <div class="face back">p2m</div>
+  <div class="face right">water</div>
+  <div class="face left">data</div>
+  <div class="face top">simulation</div>
+  <div class="face bottom">chrisenv</div>
+</div>
+:::
