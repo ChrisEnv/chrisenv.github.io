@@ -2,7 +2,7 @@
 title: "csweb"
 ---
 
-This is a Quarto website combined with a git publishing workflow. In Progress 2.
+This is a Quarto website combined with a git publishing workflow. In Progress 3.
 
 To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
 
