@@ -7,10 +7,10 @@
     "text": "quarto\n\n\np2m\n\n\nwater\n\n\ndata\n\n\nsimulation\n\n\nchrisenv"
   },
   {
-    "objectID": "content/about.html",
-    "href": "content/about.html",
-    "title": "About",
+    "objectID": "content/start.html",
+    "href": "content/start.html",
+    "title": "Next Page",
     "section": "",
-    "text": "This commit is made in the dev branch.\n\n1 + 2\n\n[1] 3"
+    "text": "Welcome to the Next Page!\nThis is the continuation of our journey."
   }
 ]
