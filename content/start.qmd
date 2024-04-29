@@ -5,4 +5,4 @@ format: html
 
 # Welcome to the Next Page!
 
-This is the continuation of our journey.
+This is the continuation of our journey. Jeremy is giga chad.
