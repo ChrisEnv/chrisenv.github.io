@@ -1,5 +1,4 @@
 ---
-title: "chrisenv"
 format:
   html:
     css: resources/css/cube.css

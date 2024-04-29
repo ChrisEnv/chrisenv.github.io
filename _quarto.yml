@@ -6,13 +6,16 @@ website:
   navbar:
     left:
       - href: index.qmd
-        text: Home
-      - content/about.qmd
+        text: home
+      - href: content/about.qmd
+        text: about
+      - href: content/start.qmd
+        text: start
 
 format:
   html:
     theme: cosmo
-    css: "resources/css/styles.css"
+    css: "/resources/css/styles.css"
     toc: true
 
 execute:

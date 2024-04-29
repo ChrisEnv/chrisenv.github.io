@@ -1,3 +1,10 @@
+/* styles.css */
+/* Hide the navbar */
+.navbar {  /* Replace '.navbar' with the actual class or ID you identified */
+    display: none !important;
+}
+
+/* Ensure the main content expands to fill the space left by the navbar */
 html, body {
     margin: 0;
     padding: 0;
@@ -6,10 +13,8 @@ html, body {
     position: relative; /* Helps contain all rendering within the body bounds */
 }
 
+/* Fullscreen for your 3D canvas */
 #webgl-output {
     width: 100vw; /* 100% of the viewport width */
     height: 100vh; /* 100% of the viewport height */
-    overflow: hidden; /* Prevent any overflow from this element */
 }
-
-
