@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss  xmlns:atom="http://www.w3.org/2005/Atom" 
+      xmlns:media="http://search.yahoo.com/mrss/" 
+      xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+      xmlns:dc="http://purl.org/dc/elements/1.1/" 
+      version="2.0">
+<channel>
+<title>Christian Stankov</title>
+<link>https://ChrisEnv.github.io/chrisenv.github.io/content/blog.html</link>
+<atom:link href="https://ChrisEnv.github.io/chrisenv.github.io/content/blog.xml" rel="self" type="application/rss+xml"/>
+<description></description>
+<generator>quarto-1.4.555</generator>
+<lastBuildDate>Sat, 22 Jun 2024 05:56:31 GMT</lastBuildDate>
+<item>
+  <title>RStudio Environment Cleanup Guide</title>
+  <link>https://ChrisEnv.github.io/chrisenv.github.io/content/blog/01-rstudio_cleanup_guide/RStudio_Cleanup_Guide.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>This guide provides detailed instructions for cleaning up your computing environment on both Mac and Windows to ensure a fresh setup for RStudio. Using package managers like Homebrew for Mac and Chocolatey for Windows makes the process streamlined and consistent.</p>
+<section id="for-mac-users-using-homebrew" class="level2">
+<h2 class="anchored" data-anchor-id="for-mac-users-using-homebrew">For Mac Users (Using Homebrew)</h2>
+<section id="uninstall-rstudio" class="level3">
+<h3 class="anchored" data-anchor-id="uninstall-rstudio"><strong>Uninstall RStudio</strong></h3>
+<ul>
+<li><p>Open Terminal.</p></li>
+<li><p>Use Homebrew to uninstall RStudio:</p>
+<div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><span class="ex" style="color: null;
+background-color: null;
+font-style: inherit;">brew</span> uninstall <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">--cask</span> rstudio</span></code></pre></div></li>
+</ul>
+</section>
+<section id="remove-configuration-files" class="level3">
+<h3 class="anchored" data-anchor-id="remove-configuration-files"><strong>Remove Configuration Files</strong></h3>
+<ul>
+<li><p>Delete RStudio settings and session data:</p>
+<div class="sourceCode" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">rm</span> <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">-rf</span> ~/.rstudio-desktop</span></code></pre></div></li>
+<li><p>Remove RStudio’s saved application state:</p>
+<div class="sourceCode" id="cb3" style="background: #f1f3f5;"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">rm</span> <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">-rf</span> ~/Library/Saved\ Application\ State/com.rstudio.desktop.savedState</span>
+<span id="cb3-2"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">rm</span> <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">-rf</span> ~/Library/Saved\ Application\ State/org.rstudio.RStudio.savedState</span></code></pre></div></li>
+<li><p>Delete RStudio preferences:</p>
+<div class="sourceCode" id="cb4" style="background: #f1f3f5;"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">rm</span> ~/Library/Preferences/com.rstudio.desktop.plist</span>
+<span id="cb4-2"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">rm</span> ~/Library/Preferences/org.rstudio.RStudio.plist</span></code></pre></div></li>
+</ul>
+</section>
+<section id="optional-clean-r-and-r-packages" class="level3">
+<h3 class="anchored" data-anchor-id="optional-clean-r-and-r-packages"><strong>Optional: Clean R and R Packages</strong></h3>
+<ul>
+<li><p>Uninstall R:</p>
+<div class="sourceCode" id="cb5" style="background: #f1f3f5;"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><span class="ex" style="color: null;
+background-color: null;
+font-style: inherit;">brew</span> uninstall r</span></code></pre></div></li>
+<li><p>Manually delete any installed R packages:</p>
+<div class="sourceCode" id="cb6" style="background: #f1f3f5;"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">rm</span> <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">-rf</span> ~/Library/R</span>
+<span id="cb6-2"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">rm</span> <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">-rf</span> /Library/Frameworks/R.framework</span></code></pre></div></li>
+</ul>
+</section>
+<section id="empty-trash" class="level3">
+<h3 class="anchored" data-anchor-id="empty-trash"><strong>Empty Trash</strong></h3>
+<ul>
+<li>Ensure all deleted files are permanently removed by emptying the Trash.</li>
+</ul>
+</section>
+</section>
+<section id="for-windows-users-using-chocolatey" class="level2">
+<h2 class="anchored" data-anchor-id="for-windows-users-using-chocolatey">For Windows Users (Using Chocolatey)</h2>
+<section id="uninstall-rstudio-1" class="level3">
+<h3 class="anchored" data-anchor-id="uninstall-rstudio-1"><strong>Uninstall RStudio</strong></h3>
+<ul>
+<li><p>Open an administrative command prompt or PowerShell.</p></li>
+<li><p>Use Chocolatey to uninstall RStudio:</p>
+<div class="sourceCode" id="cb7" style="background: #f1f3f5;"><pre class="sourceCode powershell code-with-copy"><code class="sourceCode powershell"><span id="cb7-1">choco uninstall rstudio</span></code></pre></div></li>
+</ul>
+</section>
+<section id="remove-configuration-files-1" class="level3">
+<h3 class="anchored" data-anchor-id="remove-configuration-files-1"><strong>Remove Configuration Files</strong></h3>
+<ul>
+<li><p>Delete RStudio settings from the user directory and application data:</p>
+<div class="sourceCode" id="cb8" style="background: #f1f3f5;"><pre class="sourceCode powershell code-with-copy"><code class="sourceCode powershell"><span id="cb8-1"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">Remove-Item</span> <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">-</span>Recurse <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">-</span>Force <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"</span><span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">$env</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">:</span><span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">USERPROFILE</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">\.RData"</span></span>
+<span id="cb8-2"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">Remove-Item</span> <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">-</span>Recurse <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">-</span>Force <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"</span><span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">$env</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">:</span><span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">USERPROFILE</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">\.RHistory"</span></span>
+<span id="cb8-3"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">Remove-Item</span> <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">-</span>Recurse <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">-</span>Force <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"</span><span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">$env</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">:</span><span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">USERPROFILE</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">\.Rprofile"</span></span>
+<span id="cb8-4"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">Remove-Item</span> <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">-</span>Recurse <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">-</span>Force <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"</span><span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">$env</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">:</span><span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">APPDATA</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">\RStudio"</span></span></code></pre></div></li>
+<li><p>Remove RStudio’s desktop settings:</p>
+<div class="sourceCode" id="cb9" style="background: #f1f3f5;"><pre class="sourceCode powershell code-with-copy"><code class="sourceCode powershell"><span id="cb9-1"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">Remove-Item</span> <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">-</span>Recurse <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">-</span>Force <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"</span><span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">$env</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">:</span><span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">LOCALAPPDATA</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">\RStudio-Desktop"</span></span></code></pre></div></li>
+</ul>
+</section>
+<section id="optional-clean-r-and-r-packages-1" class="level3">
+<h3 class="anchored" data-anchor-id="optional-clean-r-and-r-packages-1"><strong>Optional: Clean R and R Packages</strong></h3>
+<ul>
+<li><p>If installed with Chocolatey, uninstall R:</p>
+<div class="sourceCode" id="cb10" style="background: #f1f3f5;"><pre class="sourceCode powershell code-with-copy"><code class="sourceCode powershell"><span id="cb10-1">choco uninstall <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">r</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">.</span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">project</span></span></code></pre></div></li>
+<li><p>Manually delete any installed R packages:</p>
+<div class="sourceCode" id="cb11" style="background: #f1f3f5;"><pre class="sourceCode powershell code-with-copy"><code class="sourceCode powershell"><span id="cb11-1"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">Remove-Item</span> <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">-</span>Recurse <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">-</span>Force <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"</span><span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">$env</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">:</span><span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">USERPROFILE</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">\Documents\R\win-library\4.x"</span>  <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Replace "4.x" with your R version</span></span></code></pre></div></li>
+</ul>
+</section>
+<section id="empty-recycle-bin" class="level3">
+<h3 class="anchored" data-anchor-id="empty-recycle-bin"><strong>Empty Recycle Bin</strong></h3>
+<ul>
+<li>Ensure that all deleted files are fully removed by emptying the Recycle Bin.</li>
+</ul>
+</section>
+</section>
+<section id="general-maintenance-tips" class="level2">
+<h2 class="anchored" data-anchor-id="general-maintenance-tips">General Maintenance Tips</h2>
+<ul>
+<li><strong>Regular Updates:</strong> Keep R, RStudio, and all packages up to date. Use <code>brew upgrade</code> on Mac and <code>choco upgrade all</code> on Windows.</li>
+<li><strong>Backup Important Files:</strong> Regularly back up your scripts, data files, and configurations. Consider using cloud storage or external drives for backups.</li>
+<li><strong>Disk Cleanup:</strong> Utilize built-in system tools for disk cleanup or third-party tools to clear temporary files and other system junk to maintain system performance.</li>
+</ul>
+
+
+</section>
+
+ ]]></description>
+  <guid>https://ChrisEnv.github.io/chrisenv.github.io/content/blog/01-rstudio_cleanup_guide/RStudio_Cleanup_Guide.html</guid>
+  <pubDate>Sat, 22 Jun 2024 05:56:31 GMT</pubDate>
+</item>
+<item>
+  <title>WebShot vs. WebShot2</title>
+  <link>https://ChrisEnv.github.io/chrisenv.github.io/content/blog/02-webshot/webshot.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<section id="webshot-vs.-webshot2" class="level1">
+<h1>WebShot vs.&nbsp;Webshot2</h1>
+<p>Dieses Dokument beschreibt den Einsatz von Web Shot und Web Shot 2. Diese Tools werden verwendet, um interaktive Widgets, wie zum Beispiel Plotly-Grafiken oder Leaflet-Maps, in nicht-interaktiven Outputformaten, wie einer PDF-Datei, darzustellen.</p>
+<section id="unterschiede-und-kompatibilität" class="level2">
+<h2 class="anchored" data-anchor-id="unterschiede-und-kompatibilität">Unterschiede und Kompatibilität</h2>
+<p>Bei der Verwendung von Web Shot und Web Shot 2 gibt es Unterschiede, insbesondere hinsichtlich der Kompatibilität und der Methoden, wie der Output generiert wird. Web Shot verwendet PhantomJS, welches auch über das Web Shot-Paket installiert werden kann. Im Gegensatz dazu benötigt Web Shot 2 einen Chrome- oder Chromium-Browser, um zu funktionieren, und setzt nicht mehr auf PhantomJS.</p>
+</section>
+<section id="aktuelle-präferenzen-und-funktionen" class="level2">
+<h2 class="anchored" data-anchor-id="aktuelle-präferenzen-und-funktionen">Aktuelle Präferenzen und Funktionen</h2>
+<p>Derzeit wird Web Shot bevorzugt, da das Resizing über die Argumente ‘fig.size’ und ‘fig.width’ unterstützt wird. Bei Web Shot 2 scheint diese Funktion momentan nicht verfügbar zu sein.</p>
+
+
+</section>
+</section>
+
+ ]]></description>
+  <guid>https://ChrisEnv.github.io/chrisenv.github.io/content/blog/02-webshot/webshot.html</guid>
+  <pubDate>Sat, 22 Jun 2024 05:56:31 GMT</pubDate>
+</item>
+<item>
+  <title>Embed JavaScript in Quarto</title>
+  <link>https://ChrisEnv.github.io/chrisenv.github.io/content/blog/03-quarto_js/quarto_js.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>Today we are diving into the world of JavaScript and how to embed it in Quarto. JavaScript is a powerful language that can be used to create interactive elements on a webpage. In this example, we will create a 3D cube using JavaScript and embed it in a Quarto document.</p>
+<div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1">::: {.cube-container}</span>
+<span id="cb1-2">&lt;div id="cube"&gt;</span>
+<span id="cb1-3">  &lt;div class="face front"&gt;quarto&lt;/div&gt;</span>
+<span id="cb1-4">  &lt;div class="face back"&gt;p2m&lt;/div&gt;</span>
+<span id="cb1-5">  &lt;div class="face right"&gt;water&lt;/div&gt;</span>
+<span id="cb1-6">  &lt;div class="face left"&gt;data&lt;/div&gt;</span>
+<span id="cb1-7">  &lt;div class="face top"&gt;simulation&lt;/div&gt;</span>
+<span id="cb1-8">  &lt;div class="face bottom"&gt;chrisenv&lt;/div&gt;</span>
+<span id="cb1-9">&lt;/div&gt;</span>
+<span id="cb1-10">:::</span></code></pre></div>
+<div class="cube-container">
+<div id="cube">
+<div class="face front">
+quarto
+</div>
+<div class="face back">
+p2m
+</div>
+<div class="face right">
+water
+</div>
+<div class="face left">
+data
+</div>
+<div class="face top">
+simulation
+</div>
+<div class="face bottom">
+chrisenv
+</div>
+</div>
+</div>
+
+
+
+ ]]></description>
+  <guid>https://ChrisEnv.github.io/chrisenv.github.io/content/blog/03-quarto_js/quarto_js.html</guid>
+  <pubDate>Sat, 22 Jun 2024 05:56:31 GMT</pubDate>
+</item>
+</channel>
+</rss>

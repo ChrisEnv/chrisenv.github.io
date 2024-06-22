@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Christian Stankov - Next Page</title>
+<title>Christian Stankov - RStudio Environment Cleanup Guide</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,25 +20,59 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
-<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../">
-<script src="../site_libs/quarto-html/quarto.js"></script>
-<script src="../site_libs/quarto-html/popper.min.js"></script>
-<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../">
+<script src="../../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -68,7 +102,7 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
-<link rel="stylesheet" href="../resources/css/styles.css">
+<link rel="stylesheet" href="../../../resources/css/styles.css">
 </head>
 
 <body class="nav-fixed">
@@ -78,7 +112,7 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="../index.html">
+    <a class="navbar-brand" href="../../../index.html">
     <span class="navbar-title">Christian Stankov</span>
     </a>
   </div>
@@ -89,15 +123,15 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../index.html"> 
+    <a class="nav-link" href="../../../index.html"> 
 <span class="menu-text">home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../content/blog.html"> 
+    <a class="nav-link" href="../../../content/blog.html"> 
 <span class="menu-text">blog</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../content/cv.pdf"> 
+    <a class="nav-link" href="../../../content/cv.pdf"> 
 <span class="menu-text">cv</span></a>
   </li>  
 </ul>
@@ -116,7 +150,21 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#welcome-to-the-next-page" id="toc-welcome-to-the-next-page" class="nav-link active" data-scroll-target="#welcome-to-the-next-page">Welcome to the Next Page!</a></li>
+  <li><a href="#for-mac-users-using-homebrew" id="toc-for-mac-users-using-homebrew" class="nav-link active" data-scroll-target="#for-mac-users-using-homebrew">For Mac Users (Using Homebrew)</a>
+  <ul class="collapse">
+  <li><a href="#uninstall-rstudio" id="toc-uninstall-rstudio" class="nav-link" data-scroll-target="#uninstall-rstudio"><strong>Uninstall RStudio</strong></a></li>
+  <li><a href="#remove-configuration-files" id="toc-remove-configuration-files" class="nav-link" data-scroll-target="#remove-configuration-files"><strong>Remove Configuration Files</strong></a></li>
+  <li><a href="#optional-clean-r-and-r-packages" id="toc-optional-clean-r-and-r-packages" class="nav-link" data-scroll-target="#optional-clean-r-and-r-packages"><strong>Optional: Clean R and R Packages</strong></a></li>
+  <li><a href="#empty-trash" id="toc-empty-trash" class="nav-link" data-scroll-target="#empty-trash"><strong>Empty Trash</strong></a></li>
+  </ul></li>
+  <li><a href="#for-windows-users-using-chocolatey" id="toc-for-windows-users-using-chocolatey" class="nav-link" data-scroll-target="#for-windows-users-using-chocolatey">For Windows Users (Using Chocolatey)</a>
+  <ul class="collapse">
+  <li><a href="#uninstall-rstudio-1" id="toc-uninstall-rstudio-1" class="nav-link" data-scroll-target="#uninstall-rstudio-1"><strong>Uninstall RStudio</strong></a></li>
+  <li><a href="#remove-configuration-files-1" id="toc-remove-configuration-files-1" class="nav-link" data-scroll-target="#remove-configuration-files-1"><strong>Remove Configuration Files</strong></a></li>
+  <li><a href="#optional-clean-r-and-r-packages-1" id="toc-optional-clean-r-and-r-packages-1" class="nav-link" data-scroll-target="#optional-clean-r-and-r-packages-1"><strong>Optional: Clean R and R Packages</strong></a></li>
+  <li><a href="#empty-recycle-bin" id="toc-empty-recycle-bin" class="nav-link" data-scroll-target="#empty-recycle-bin"><strong>Empty Recycle Bin</strong></a></li>
+  </ul></li>
+  <li><a href="#general-maintenance-tips" id="toc-general-maintenance-tips" class="nav-link" data-scroll-target="#general-maintenance-tips">General Maintenance Tips</a></li>
   </ul>
 </nav>
     </div>
@@ -125,7 +173,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Next Page</h1>
+<h1 class="title">RStudio Environment Cleanup Guide</h1>
 </div>
 
 
@@ -142,9 +190,92 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="welcome-to-the-next-page" class="level1">
-<h1>Welcome to the Next Page!</h1>
-<p>This is the continuation of our journey. Jeremy is giga chad.</p>
+<p>This guide provides detailed instructions for cleaning up your computing environment on both Mac and Windows to ensure a fresh setup for RStudio. Using package managers like Homebrew for Mac and Chocolatey for Windows makes the process streamlined and consistent.</p>
+<section id="for-mac-users-using-homebrew" class="level2">
+<h2 class="anchored" data-anchor-id="for-mac-users-using-homebrew">For Mac Users (Using Homebrew)</h2>
+<section id="uninstall-rstudio" class="level3">
+<h3 class="anchored" data-anchor-id="uninstall-rstudio"><strong>Uninstall RStudio</strong></h3>
+<ul>
+<li><p>Open Terminal.</p></li>
+<li><p>Use Homebrew to uninstall RStudio:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">brew</span> uninstall <span class="at">--cask</span> rstudio</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+</ul>
+</section>
+<section id="remove-configuration-files" class="level3">
+<h3 class="anchored" data-anchor-id="remove-configuration-files"><strong>Remove Configuration Files</strong></h3>
+<ul>
+<li><p>Delete RStudio settings and session data:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">rm</span> <span class="at">-rf</span> ~/.rstudio-desktop</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+<li><p>Remove RStudio’s saved application state:</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">rm</span> <span class="at">-rf</span> ~/Library/Saved\ Application\ State/com.rstudio.desktop.savedState</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">rm</span> <span class="at">-rf</span> ~/Library/Saved\ Application\ State/org.rstudio.RStudio.savedState</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+<li><p>Delete RStudio preferences:</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">rm</span> ~/Library/Preferences/com.rstudio.desktop.plist</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="fu">rm</span> ~/Library/Preferences/org.rstudio.RStudio.plist</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+</ul>
+</section>
+<section id="optional-clean-r-and-r-packages" class="level3">
+<h3 class="anchored" data-anchor-id="optional-clean-r-and-r-packages"><strong>Optional: Clean R and R Packages</strong></h3>
+<ul>
+<li><p>Uninstall R:</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="ex">brew</span> uninstall r</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+<li><p>Manually delete any installed R packages:</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">rm</span> <span class="at">-rf</span> ~/Library/R</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="fu">rm</span> <span class="at">-rf</span> /Library/Frameworks/R.framework</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+</ul>
+</section>
+<section id="empty-trash" class="level3">
+<h3 class="anchored" data-anchor-id="empty-trash"><strong>Empty Trash</strong></h3>
+<ul>
+<li>Ensure all deleted files are permanently removed by emptying the Trash.</li>
+</ul>
+</section>
+</section>
+<section id="for-windows-users-using-chocolatey" class="level2">
+<h2 class="anchored" data-anchor-id="for-windows-users-using-chocolatey">For Windows Users (Using Chocolatey)</h2>
+<section id="uninstall-rstudio-1" class="level3">
+<h3 class="anchored" data-anchor-id="uninstall-rstudio-1"><strong>Uninstall RStudio</strong></h3>
+<ul>
+<li><p>Open an administrative command prompt or PowerShell.</p></li>
+<li><p>Use Chocolatey to uninstall RStudio:</p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode powershell code-with-copy"><code class="sourceCode powershell"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>choco uninstall rstudio</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+</ul>
+</section>
+<section id="remove-configuration-files-1" class="level3">
+<h3 class="anchored" data-anchor-id="remove-configuration-files-1"><strong>Remove Configuration Files</strong></h3>
+<ul>
+<li><p>Delete RStudio settings from the user directory and application data:</p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode powershell code-with-copy"><code class="sourceCode powershell"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">Remove-Item</span> <span class="op">-</span>Recurse <span class="op">-</span>Force <span class="st">"</span><span class="va">$env</span><span class="op">:</span><span class="va">USERPROFILE</span><span class="st">\.RData"</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="fu">Remove-Item</span> <span class="op">-</span>Recurse <span class="op">-</span>Force <span class="st">"</span><span class="va">$env</span><span class="op">:</span><span class="va">USERPROFILE</span><span class="st">\.RHistory"</span></span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a><span class="fu">Remove-Item</span> <span class="op">-</span>Recurse <span class="op">-</span>Force <span class="st">"</span><span class="va">$env</span><span class="op">:</span><span class="va">USERPROFILE</span><span class="st">\.Rprofile"</span></span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a><span class="fu">Remove-Item</span> <span class="op">-</span>Recurse <span class="op">-</span>Force <span class="st">"</span><span class="va">$env</span><span class="op">:</span><span class="va">APPDATA</span><span class="st">\RStudio"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+<li><p>Remove RStudio’s desktop settings:</p>
+<div class="sourceCode" id="cb9"><pre class="sourceCode powershell code-with-copy"><code class="sourceCode powershell"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">Remove-Item</span> <span class="op">-</span>Recurse <span class="op">-</span>Force <span class="st">"</span><span class="va">$env</span><span class="op">:</span><span class="va">LOCALAPPDATA</span><span class="st">\RStudio-Desktop"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+</ul>
+</section>
+<section id="optional-clean-r-and-r-packages-1" class="level3">
+<h3 class="anchored" data-anchor-id="optional-clean-r-and-r-packages-1"><strong>Optional: Clean R and R Packages</strong></h3>
+<ul>
+<li><p>If installed with Chocolatey, uninstall R:</p>
+<div class="sourceCode" id="cb10"><pre class="sourceCode powershell code-with-copy"><code class="sourceCode powershell"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>choco uninstall <span class="fu">r</span><span class="op">.</span><span class="fu">project</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+<li><p>Manually delete any installed R packages:</p>
+<div class="sourceCode" id="cb11"><pre class="sourceCode powershell code-with-copy"><code class="sourceCode powershell"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="fu">Remove-Item</span> <span class="op">-</span>Recurse <span class="op">-</span>Force <span class="st">"</span><span class="va">$env</span><span class="op">:</span><span class="va">USERPROFILE</span><span class="st">\Documents\R\win-library\4.x"</span>  <span class="co"># Replace "4.x" with your R version</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+</ul>
+</section>
+<section id="empty-recycle-bin" class="level3">
+<h3 class="anchored" data-anchor-id="empty-recycle-bin"><strong>Empty Recycle Bin</strong></h3>
+<ul>
+<li>Ensure that all deleted files are fully removed by emptying the Recycle Bin.</li>
+</ul>
+</section>
+</section>
+<section id="general-maintenance-tips" class="level2">
+<h2 class="anchored" data-anchor-id="general-maintenance-tips">General Maintenance Tips</h2>
+<ul>
+<li><strong>Regular Updates:</strong> Keep R, RStudio, and all packages up to date. Use <code>brew upgrade</code> on Mac and <code>choco upgrade all</code> on Windows.</li>
+<li><strong>Backup Important Files:</strong> Regularly back up your scripts, data files, and configurations. Consider using cloud storage or external drives for backups.</li>
+<li><strong>Disk Cleanup:</strong> Utilize built-in system tools for disk cleanup or third-party tools to clear temporary files and other system junk to maintain system performance.</li>
+</ul>
 
 
 </section>
