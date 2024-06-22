@@ -2,16 +2,15 @@ project:
   type: website
 
 website:
-  title: "chrisenv"
+  title: "Christian Stankov"
   navbar:
     left:
       - href: index.qmd
         text: home
-      - href: content/about.qmd
-        text: about
-      - href: content/start.qmd
-        text: start
-
+      - href: content/blog.qmd
+        text: blog
+      - href: content/cv.qmd
+        text: cv
 format:
   html:
     theme: cosmo
@@ -19,7 +18,7 @@ format:
     toc: true
 
 execute:
-  freeze: auto
+  freeze: false
   
 editor: source
 

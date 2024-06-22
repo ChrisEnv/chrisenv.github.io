@@ -1,0 +1,148 @@
+---
+title: "Christian Stankovs CV"
+author:
+  firstname: Christian
+  lastname: Stankov
+  address: "DE-13189 Berlin, Deutschland, Berlin"
+  position: "17.02.1994, Berlin"
+  contacts:
+    # - icon: assets/icon/phone-solid.svg
+    #   text: 
+    # - icon: fa envelope
+    #   text: chrisenv@posteo.de
+    #   url: "mailto:chrisenv@posteo.de"
+    - icon: assets/icon/bi-house-fill.svg
+      text: website
+      url: https://chrisenv.github.io/
+    - icon: fa brands github
+      text: GitHub
+      url: https://github.com/ChrisEnv
+    - icon: fa brands linkedin
+      text: LinkedIn
+      url: www.linkedin.com/in/christian-stankov-eng
+
+format: awesomecv-typst
+---
+
+## Akademische Ausbildung
+
+```{=typst}
+#resume-entry(
+  title: "M.Sc. Technischer Umweltschutz (1,2)",
+  location: "TU Berlin",
+  date: "2017 - 2022",
+  description: "Thesis: Erstellung und Validierung einer Simulation der Niedertemperaturdestillation und Kristallisation zur Aufbereitung von Abwasserkonzentraten",
+)
+#resume-item[
+  Schwerpunkte:
+  - Umweltprozesstechnik
+  - Abwasserverfahrenstechnik
+  - Siedlungswasserwirtschaft
+]
+#resume-entry(
+  title: "B.Sc. Technischer Umweltschutz (2,4)",
+  location: "TU Berlin",
+  date: "2012 - 2017",
+  description: "Thesis: End of Life Betrachtung des Fahrradlebenszyklus",
+)
+#resume-entry(
+  title: "Abitur (1,8)",
+  location: "Barnim Gymnasium",
+  date: "2005 - 2012",
+  description: "Schnellläuferklasse",
+)
+```
+
+## Berufliche Laufbahn
+
+```{=typst}
+#resume-entry(
+  title: "Verfahrensingenieur/Digitalisierung ",
+  location: "p2m Berlin",
+  date: "seit 05/2023",
+  description: "Automatisierung von Planungsprozessen:"
+)
+#resume-item[
+  - Einführung git
+  - automatisierte Erstellung Planungsunterlagen (Quarto)
+]
+#resume-item[
+  Projektarbeit Verfahrenstechnik:
+  - Data Science (Betriebsdaten)
+  - Benchmarking
+  - Prozessoptimierung
+  - verfahrenstechnische Auslegung
+]
+#resume-entry(
+  title: "Geschäftsinhaber",
+  location: "clean-house Bernau",
+  description: "Übernahme des Familienbetriebes:",
+  date: "seit 2020"
+)
+#resume-item[
+  - Sicherung aller 6 Arbeitsplätze in der Corona Pandemie
+  - energetische Optimierung des Betriebes
+  - administrative Tätigkeiten
+]
+#resume-entry(
+  title: "Freiberufler",
+  location: "online",
+  date: "2017 - 2023",
+  description: "Nachhilfe Mathematik",
+)
+#resume-entry(
+  title: "Werkstudent",
+  location: "KWB",
+  date: "10/2017 - 10/2018",
+  description: "Grobauslegung Abwasseraufbereitung",
+)
+#resume-entry(
+  title: "Praktikum",
+  location: "BUND e.V.",
+  date: "08/2015 - 10/2015",
+  description: "Reduzierung Energieverbrauch von Krankenhäusern"
+)
+```
+
+## Fähigkeiten
+
+```{=typst}
+#resume-entry(
+  title: "Sprachen",
+  description: "Deutsch (Muttersprache), Englisch (verhandlungssicher), Französisch (Grundlagen)"
+)
+#resume-entry(
+  title: "Programmierung",
+  description: "R, R-Shiny, git, Quarto, LaTeX, Typst, SQL (Grundlagen), C (Grundlagen), NetLogo (Grundlagen)"
+)
+#resume-entry(
+  title: "Software",
+  description: "RStudio, GitHub, MS Office"
+)
+#resume-entry(
+  title: "Führerschein",
+  description: "Klasse B"
+)
+```
+
+## Kurse und Zertifikate
+
+```{=typst}
+#resume-entry(
+  title: "TWEED Hybrid Summer School ",
+  location: "Amman, Jordanien",
+  date: "2022",
+  description: "Klasse B"
+)
+```
+
+## Vorträge
+
+```{=typst}
+#resume-entry(
+  title: "Aufbereitung von Abwasserkonzentraten",
+  location: "Amman, Jordanien",
+  date: "2022",
+  description: "1st GJU Symposium on Sustainable Development"
+)
+```

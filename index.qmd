@@ -4,13 +4,4 @@ format:
     css: resources/css/cube.css
 ---
 
-::: {.cube-container}
-<div id="cube">
-  <div class="face front">quarto</div>
-  <div class="face back">p2m</div>
-  <div class="face right">water</div>
-  <div class="face left">data</div>
-  <div class="face top">simulation</div>
-  <div class="face bottom">chrisenv</div>
-</div>
-:::
+Welcome to my personal website! I am an engineer with a background in environmental engineering and a passion for digitalization. I am currently working as a process engineer at p2m Berlin, where I am responsible for the automation of planning processes. I am also a Quarto enthusiast and enjoy creating interactive content with Quarto. Feel free to reach out to me via email or connect with me on LinkedIn or GitHub.

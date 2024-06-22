@@ -1,0 +1,84 @@
+---
+title: "RStudio Environment Cleanup Guide"
+---
+
+This guide provides detailed instructions for cleaning up your computing environment on both Mac and Windows to ensure a fresh setup for RStudio. Using package managers like Homebrew for Mac and Chocolatey for Windows makes the process streamlined and consistent.
+
+## For Mac Users (Using Homebrew)
+
+### **Uninstall RStudio**
+- Open Terminal.
+- Use Homebrew to uninstall RStudio:
+  ```bash
+  brew uninstall --cask rstudio
+  ```
+
+### **Remove Configuration Files**
+- Delete RStudio settings and session data:
+  ```bash
+  rm -rf ~/.rstudio-desktop
+  ```
+- Remove RStudio's saved application state:
+  ```bash
+  rm -rf ~/Library/Saved\ Application\ State/com.rstudio.desktop.savedState
+  rm -rf ~/Library/Saved\ Application\ State/org.rstudio.RStudio.savedState
+  ```
+- Delete RStudio preferences:
+  ```bash
+  rm ~/Library/Preferences/com.rstudio.desktop.plist
+  rm ~/Library/Preferences/org.rstudio.RStudio.plist
+  ```
+
+### **Optional: Clean R and R Packages**
+- Uninstall R:
+  ```bash
+  brew uninstall r
+  ```
+- Manually delete any installed R packages:
+  ```bash
+  rm -rf ~/Library/R
+  rm -rf /Library/Frameworks/R.framework
+  ```
+
+### **Empty Trash**
+- Ensure all deleted files are permanently removed by emptying the Trash.
+
+## For Windows Users (Using Chocolatey)
+
+### **Uninstall RStudio**
+- Open an administrative command prompt or PowerShell.
+- Use Chocolatey to uninstall RStudio:
+  ```powershell
+  choco uninstall rstudio
+  ```
+
+### **Remove Configuration Files**
+- Delete RStudio settings from the user directory and application data:
+  ```powershell
+  Remove-Item -Recurse -Force "$env:USERPROFILE\.RData"
+  Remove-Item -Recurse -Force "$env:USERPROFILE\.RHistory"
+  Remove-Item -Recurse -Force "$env:USERPROFILE\.Rprofile"
+  Remove-Item -Recurse -Force "$env:APPDATA\RStudio"
+  ```
+- Remove RStudio's desktop settings:
+  ```powershell
+  Remove-Item -Recurse -Force "$env:LOCALAPPDATA\RStudio-Desktop"
+  ```
+
+### **Optional: Clean R and R Packages**
+- If installed with Chocolatey, uninstall R:
+  ```powershell
+  choco uninstall r.project
+  ```
+- Manually delete any installed R packages:
+  ```powershell
+  Remove-Item -Recurse -Force "$env:USERPROFILE\Documents\R\win-library\4.x"  # Replace "4.x" with your R version
+  ```
+
+### **Empty Recycle Bin**
+- Ensure that all deleted files are fully removed by emptying the Recycle Bin.
+
+## General Maintenance Tips
+- **Regular Updates:** Keep R, RStudio, and all packages up to date. Use `brew upgrade` on Mac and `choco upgrade all` on Windows.
+- **Backup Important Files:** Regularly back up your scripts, data files, and configurations. Consider using cloud storage or external drives for backups.
+- **Disk Cleanup:** Utilize built-in system tools for disk cleanup or third-party tools to clear temporary files and other system junk to maintain system performance.

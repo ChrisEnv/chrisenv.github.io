@@ -1,0 +1,16 @@
+---
+title: "WebShot vs. WebShot2"
+---
+
+# WebShot vs. Webshot2
+
+Dieses Dokument beschreibt den Einsatz von Web Shot und Web Shot 2. Diese Tools werden verwendet, um interaktive Widgets, wie zum Beispiel Plotly-Grafiken oder Leaflet-Maps, in nicht-interaktiven Outputformaten, wie einer PDF-Datei, darzustellen.
+
+## Unterschiede und Kompatibilität
+
+Bei der Verwendung von Web Shot und Web Shot 2 gibt es Unterschiede, insbesondere hinsichtlich der Kompatibilität und der Methoden, wie der Output generiert wird. Web Shot verwendet PhantomJS, welches auch über das Web Shot-Paket installiert werden kann. Im Gegensatz dazu benötigt Web Shot 2 einen Chrome- oder Chromium-Browser, um zu funktionieren, und setzt nicht mehr auf PhantomJS.
+
+## Aktuelle Präferenzen und Funktionen
+
+Derzeit wird Web Shot bevorzugt, da das Resizing über die Argumente 'fig.size' und 'fig.width' unterstützt wird. Bei Web Shot 2 scheint diese Funktion momentan nicht verfügbar zu sein.
+

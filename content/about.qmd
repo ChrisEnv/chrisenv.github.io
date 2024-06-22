@@ -3,7 +3,6 @@ format:
   html:
     css: 
       - /resources/css/no-navbar.css
-  
 ---
 
 <div id="webgl-output"></div>

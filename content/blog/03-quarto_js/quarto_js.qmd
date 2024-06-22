@@ -1,0 +1,32 @@
+---
+title: "Embed JavaScript in Quarto"
+format:
+  html:
+    css: ../../../resources/css/cube.css
+---
+
+Today we are diving into the world of JavaScript and how to embed it in Quarto. JavaScript is a powerful language that can be used to create interactive elements on a webpage. In this example, we will create a 3D cube using JavaScript and embed it in a Quarto document.
+
+````markdown
+::: {.cube-container}
+<div id="cube">
+  <div class="face front">quarto</div>
+  <div class="face back">p2m</div>
+  <div class="face right">water</div>
+  <div class="face left">data</div>
+  <div class="face top">simulation</div>
+  <div class="face bottom">chrisenv</div>
+</div>
+:::
+````
+
+::: {.cube-container}
+<div id="cube">
+  <div class="face front">quarto</div>
+  <div class="face back">p2m</div>
+  <div class="face right">water</div>
+  <div class="face left">data</div>
+  <div class="face top">simulation</div>
+  <div class="face bottom">chrisenv</div>
+</div>
+:::
