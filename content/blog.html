@@ -129,7 +129,7 @@ window.Quarto = {
 </script>
 
 <link rel="stylesheet" href="../resources/css/styles.css">
-<link rel="alternate" type="application/rss+xml" title="Christian Stankov" href="blog.xml" data-external="1"></head>
+</head>
 
 <body class="nav-fixed">
 
@@ -159,6 +159,18 @@ window.Quarto = {
   <li class="nav-item">
     <a class="nav-link" href="../content/cv.pdf"> 
 <span class="menu-text">cv</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/ChrisEnv/chrisenv.github.io"> <i class="bi bi-github" role="img" aria-label="GitHub repo">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://linkedin.com/in/christian-stankov-eng"> <i class="bi bi-linkedin" role="img" aria-label="LinkedIn">
+</i> 
+<span class="menu-text"></span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -208,10 +220,12 @@ window.Quarto = {
     </div>
 </div>
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-listing-file-modified-sort="1719035771787" data-listing-reading-time-sort="2" data-listing-word-count-sort="362">
+<div class="g-col-1" data-index="0" data-listing-file-modified-sort="1719041189860" data-listing-reading-time-sort="2" data-listing-word-count-sort="362">
 <a href="../content/blog/01-rstudio_cleanup_guide/RStudio_Cleanup_Guide.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
-<div class="listing-item-img-placeholder card-img-top" style="height: 150px;">&nbsp;</div>
+<p class="card-img-top">
+<img src="../content/blog/01-rstudio_cleanup_guide/blog_image.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
 RStudio Environment Cleanup Guide
@@ -223,10 +237,12 @@ This guide provides detailed instructions for cleaning up your computing environ
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="1" data-listing-file-modified-sort="1719035771787" data-listing-reading-time-sort="1" data-listing-word-count-sort="123">
+<div class="g-col-1" data-index="1" data-listing-file-modified-sort="1719041189868" data-listing-reading-time-sort="1" data-listing-word-count-sort="120">
 <a href="../content/blog/02-webshot/webshot.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
-<div class="listing-item-img-placeholder card-img-top" style="height: 150px;">&nbsp;</div>
+<p class="card-img-top">
+<img src="../content/blog/02-webshot/blog_image.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
 WebShot vs.&nbsp;WebShot2
@@ -238,10 +254,12 @@ Dieses Dokument beschreibt den Einsatz von Web Shot und Web Shot 2. Diese Tools 
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="2" data-listing-file-modified-sort="1719035771787" data-listing-reading-time-sort="1" data-listing-word-count-sort="102">
+<div class="g-col-1" data-index="2" data-listing-file-modified-sort="1719041189872" data-listing-reading-time-sort="1" data-listing-word-count-sort="102">
 <a href="../content/blog/03-quarto_js/quarto_js.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
-<div class="listing-item-img-placeholder card-img-top" style="height: 150px;">&nbsp;</div>
+<p class="card-img-top">
+<img src="../content/blog/03-quarto_js/blog_image.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
 Embed JavaScript in Quarto
@@ -339,7 +357,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   });
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp("https:\/\/ChrisEnv\.github\.io\/chrisenv\.github\.io\/");
+      var filterRegex = new RegExp("https:\/\/chrisenv\.github\.io\/");
     var isInternal = (href) => {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }

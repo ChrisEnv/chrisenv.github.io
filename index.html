@@ -102,6 +102,18 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">cv</span></a>
   </li>  
 </ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/ChrisEnv/chrisenv.github.io"> <i class="bi bi-github" role="img" aria-label="GitHub repo">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://linkedin.com/in/christian-stankov-eng"> <i class="bi bi-linkedin" role="img" aria-label="LinkedIn">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
           </div> <!-- /navcollapse -->
           <div class="quarto-navbar-tools">
 </div>
@@ -207,7 +219,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   });
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp("https:\/\/ChrisEnv\.github\.io\/chrisenv\.github\.io\/");
+      var filterRegex = new RegExp("https:\/\/chrisenv\.github\.io\/");
     var isInternal = (href) => {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }

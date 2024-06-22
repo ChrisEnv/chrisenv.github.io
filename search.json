@@ -11,21 +11,21 @@
     "href": "content/blog/02-webshot/webshot.html",
     "title": "WebShot vs. WebShot2",
     "section": "",
-    "text": "Dieses Dokument beschreibt den Einsatz von Web Shot und Web Shot 2. Diese Tools werden verwendet, um interaktive Widgets, wie zum Beispiel Plotly-Grafiken oder Leaflet-Maps, in nicht-interaktiven Outputformaten, wie einer PDF-Datei, darzustellen.\n\n\nBei der Verwendung von Web Shot und Web Shot 2 gibt es Unterschiede, insbesondere hinsichtlich der Kompatibilität und der Methoden, wie der Output generiert wird. Web Shot verwendet PhantomJS, welches auch über das Web Shot-Paket installiert werden kann. Im Gegensatz dazu benötigt Web Shot 2 einen Chrome- oder Chromium-Browser, um zu funktionieren, und setzt nicht mehr auf PhantomJS.\n\n\n\nDerzeit wird Web Shot bevorzugt, da das Resizing über die Argumente ‘fig.size’ und ‘fig.width’ unterstützt wird. Bei Web Shot 2 scheint diese Funktion momentan nicht verfügbar zu sein."
+    "text": "Dieses Dokument beschreibt den Einsatz von Web Shot und Web Shot 2. Diese Tools werden verwendet, um interaktive Widgets, wie zum Beispiel Plotly-Grafiken oder Leaflet-Maps, in nicht-interaktiven Outputformaten, wie einer PDF-Datei, darzustellen."
   },
   {
     "objectID": "content/blog/02-webshot/webshot.html#unterschiede-und-kompatibilität",
     "href": "content/blog/02-webshot/webshot.html#unterschiede-und-kompatibilität",
     "title": "WebShot vs. WebShot2",
-    "section": "",
-    "text": "Bei der Verwendung von Web Shot und Web Shot 2 gibt es Unterschiede, insbesondere hinsichtlich der Kompatibilität und der Methoden, wie der Output generiert wird. Web Shot verwendet PhantomJS, welches auch über das Web Shot-Paket installiert werden kann. Im Gegensatz dazu benötigt Web Shot 2 einen Chrome- oder Chromium-Browser, um zu funktionieren, und setzt nicht mehr auf PhantomJS."
+    "section": "Unterschiede und Kompatibilität",
+    "text": "Unterschiede und Kompatibilität\nBei der Verwendung von Web Shot und Web Shot 2 gibt es Unterschiede, insbesondere hinsichtlich der Kompatibilität und der Methoden, wie der Output generiert wird. Web Shot verwendet PhantomJS, welches auch über das Web Shot-Paket installiert werden kann. Im Gegensatz dazu benötigt Web Shot 2 einen Chrome- oder Chromium-Browser, um zu funktionieren, und setzt nicht mehr auf PhantomJS."
   },
   {
     "objectID": "content/blog/02-webshot/webshot.html#aktuelle-präferenzen-und-funktionen",
     "href": "content/blog/02-webshot/webshot.html#aktuelle-präferenzen-und-funktionen",
     "title": "WebShot vs. WebShot2",
-    "section": "",
-    "text": "Derzeit wird Web Shot bevorzugt, da das Resizing über die Argumente ‘fig.size’ und ‘fig.width’ unterstützt wird. Bei Web Shot 2 scheint diese Funktion momentan nicht verfügbar zu sein."
+    "section": "Aktuelle Präferenzen und Funktionen",
+    "text": "Aktuelle Präferenzen und Funktionen\nDerzeit wird Web Shot bevorzugt, da das Resizing über die Argumente ‘fig.size’ und ‘fig.width’ unterstützt wird. Bei Web Shot 2 scheint diese Funktion momentan nicht verfügbar zu sein."
   },
   {
     "objectID": "content/blog/03-quarto_js/quarto_js.html",
@@ -74,6 +74,6 @@
     "href": "content/blog.html",
     "title": "Christian Stankov",
     "section": "",
-    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\nRStudio Environment Cleanup Guide\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWebShot vs. WebShot2\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nEmbed JavaScript in Quarto\n\n\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\nRStudio Environment Cleanup Guide\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWebShot vs. WebShot2\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nEmbed JavaScript in Quarto\n\n\n\n\n\n\n\n\n\n\nNo matching items"
   }
 ]
