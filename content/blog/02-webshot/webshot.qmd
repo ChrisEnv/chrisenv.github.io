@@ -1,8 +1,7 @@
 ---
 title: "WebShot vs. WebShot2"
+image: blog_image.png
 ---
-
-# WebShot vs. Webshot2
 
 Dieses Dokument beschreibt den Einsatz von Web Shot und Web Shot 2. Diese Tools werden verwendet, um interaktive Widgets, wie zum Beispiel Plotly-Grafiken oder Leaflet-Maps, in nicht-interaktiven Outputformaten, wie einer PDF-Datei, darzustellen.
 

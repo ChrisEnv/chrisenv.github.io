@@ -1,5 +1,6 @@
 ---
 title: "Embed JavaScript in Quarto"
+image: blog_image.png
 format:
   html:
     css: ../../../resources/css/cube.css

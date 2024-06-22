@@ -8,9 +8,9 @@ author:
   contacts:
     # - icon: assets/icon/phone-solid.svg
     #   text: 
-    # - icon: fa envelope
-    #   text: chrisenv@posteo.de
-    #   url: "mailto:chrisenv@posteo.de"
+    - icon: fa envelope
+      text: chrisenv@posteo.de
+      url: "mailto:chrisenv@posteo.de"
     - icon: assets/icon/bi-house-fill.svg
       text: website
       url: https://chrisenv.github.io/

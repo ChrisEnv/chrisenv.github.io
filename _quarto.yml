@@ -2,7 +2,12 @@ project:
   type: website
 
 website:
+
   title: "Christian Stankov"
+  
+  site-url: https://chrisenv.github.io/
+  description: "Christian Stankov's personal website"
+  
   navbar:
     left:
       - href: index.qmd
@@ -11,6 +16,14 @@ website:
         text: blog
       - href: content/cv.qmd
         text: cv
+    
+    right:
+      - icon: github
+        href: https://github.com/ChrisEnv/chrisenv.github.io
+        aria-label: GitHub repo
+      - icon: linkedin
+        href: https://linkedin.com/in/christian-stankov-eng
+        aria-label: LinkedIn
 format:
   html:
     theme: cosmo
