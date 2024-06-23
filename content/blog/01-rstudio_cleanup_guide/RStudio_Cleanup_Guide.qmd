@@ -1,6 +1,10 @@
 ---
 title: "RStudio Environment Cleanup Guide"
+description: "Step-by-step instructions for cleaning up your RStudio environment on Mac and Windows."
+author: "Christian Stankov"
+date: "06/23/2024"
 image: blog_image.png
+categories: ["RStudio", "Quarto", "setup"]
 ---
 
 This guide provides detailed instructions for cleaning up your computing environment on both Mac and Windows to ensure a fresh setup for RStudio. Using package managers like Homebrew for Mac and Chocolatey for Windows makes the process streamlined and consistent.

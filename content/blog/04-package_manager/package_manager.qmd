@@ -1,0 +1,12 @@
+---
+title: "package manager"
+description: "setting up reproducible environments with package managers"
+author: "Christian Stankov"
+date: "06/23/2024"
+image: blog_image.png
+categories: ["setup"]
+
+draft: true
+---
+
+Using diff

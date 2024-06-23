@@ -1,0 +1,10 @@
+# options apply to all posts in this folder
+
+# comments
+
+comments:
+  utterances:
+    repo: ChrisEnv/chrisenv.github.io
+
+# freeze computational output
+freeze: true

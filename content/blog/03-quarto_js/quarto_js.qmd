@@ -1,6 +1,10 @@
 ---
-title: "Embed JavaScript in Quarto"
+title: "JavaScript in Quarto"
+description: "First glance on how to embed JavaScript in Quarto."
+author: "Christian Stankov"
+date: "06/23/2024"
 image: blog_image.png
+categories: ["Quarto"]
 format:
   html:
     css: ../../../resources/css/cube.css

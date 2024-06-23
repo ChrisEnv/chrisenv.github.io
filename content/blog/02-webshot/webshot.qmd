@@ -1,6 +1,10 @@
 ---
 title: "WebShot vs. WebShot2"
+description: "WebShot is a tool to render interactive widgets in non-interactive output formats. This document describes my experiences with webshot and webshot2 in quarto."
+author: "Christian Stankov"
+date: "06/23/2024"
 image: blog_image.png
+categories: ["Quarto"]
 ---
 
 Dieses Dokument beschreibt den Einsatz von Web Shot und Web Shot 2. Diese Tools werden verwendet, um interaktive Widgets, wie zum Beispiel Plotly-Grafiken oder Leaflet-Maps, in nicht-interaktiven Outputformaten, wie einer PDF-Datei, darzustellen.
