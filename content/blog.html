@@ -78,9 +78,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-image','listing-date','listing-title','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-image','listing-date','listing-title','listing-categories','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       
-      searchColumns: ["listing-title","listing-author","listing-image","listing-description","listing-categories"],
+      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description","listing-categories"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -185,7 +185,7 @@ window.Quarto = {
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(3)</span></div></div></div>
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(3)</span></div><div class="category" data-category="Quarto">Quarto <span class="quarto-category-count">(3)</span></div><div class="category" data-category="RStudio">RStudio <span class="quarto-category-count">(1)</span></div><div class="category" data-category="setup">setup <span class="quarto-category-count">(1)</span></div></div></div>
 <!-- main -->
 <main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
 
@@ -220,7 +220,7 @@ window.Quarto = {
     </div>
 </div>
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-listing-file-modified-sort="1719041189860" data-listing-reading-time-sort="2" data-listing-word-count-sort="362">
+<div class="g-col-1" data-index="0" data-categories="RStudio,Quarto,setup" data-listing-date-sort="1719100800000" data-listing-file-modified-sort="1719148730422" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="362">
 <a href="../content/blog/01-rstudio_cleanup_guide/RStudio_Cleanup_Guide.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -230,14 +230,30 @@ window.Quarto = {
 <h5 class="no-anchor card-title listing-title">
 RStudio Environment Cleanup Guide
 </h5>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('RStudio'); return false;">
+RStudio
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Quarto'); return false;">
+Quarto
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('setup'); return false;">
+setup
+</div>
+</div>
 <div class="card-text listing-description">
-This guide provides detailed instructions for cleaning up your computing environment on both Mac and Windows to ensure a fresh setup for RStudio. Using package managers like…
+Step-by-step instructions for cleaning up your RStudio environment on Mac and Windows.
+</div>
+<div class="card-attribution card-text-small end">
+<div class="listing-date">
+Jun 23, 2024
+</div>
 </div>
 </div>
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="1" data-listing-file-modified-sort="1719041189868" data-listing-reading-time-sort="1" data-listing-word-count-sort="120">
+<div class="g-col-1" data-index="1" data-categories="Quarto" data-listing-date-sort="1719100800000" data-listing-file-modified-sort="1719148730434" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="120">
 <a href="../content/blog/02-webshot/webshot.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -247,14 +263,24 @@ This guide provides detailed instructions for cleaning up your computing environ
 <h5 class="no-anchor card-title listing-title">
 WebShot vs.&nbsp;WebShot2
 </h5>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Quarto'); return false;">
+Quarto
+</div>
+</div>
 <div class="card-text listing-description">
-Dieses Dokument beschreibt den Einsatz von Web Shot und Web Shot 2. Diese Tools werden verwendet, um interaktive Widgets, wie zum Beispiel Plotly-Grafiken oder Leaflet-Maps…
+WebShot is a tool to render interactive widgets in non-interactive output formats. This document describes my experiences with webshot and webshot2 in quarto.
+</div>
+<div class="card-attribution card-text-small end">
+<div class="listing-date">
+Jun 23, 2024
+</div>
 </div>
 </div>
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="2" data-listing-file-modified-sort="1719041189872" data-listing-reading-time-sort="1" data-listing-word-count-sort="102">
+<div class="g-col-1" data-index="2" data-categories="Quarto" data-listing-date-sort="1719100800000" data-listing-file-modified-sort="1719148730434" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="102">
 <a href="../content/blog/03-quarto_js/quarto_js.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -262,10 +288,20 @@ Dieses Dokument beschreibt den Einsatz von Web Shot und Web Shot 2. Diese Tools 
 </p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
-Embed JavaScript in Quarto
+JavaScript in Quarto
 </h5>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Quarto'); return false;">
+Quarto
+</div>
+</div>
 <div class="card-text listing-description">
-Today we are diving into the world of JavaScript and how to embed it in Quarto. JavaScript is a powerful language that can be used to create interactive elements on a…
+First glance on how to embed JavaScript in Quarto.
+</div>
+<div class="card-attribution card-text-small end">
+<div class="listing-date">
+Jun 23, 2024
+</div>
 </div>
 </div>
 </div>

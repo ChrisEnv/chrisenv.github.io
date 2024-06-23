@@ -8,9 +8,9 @@
 
 <meta name="author" content="Christian Stankov">
 <meta name="dcterms.date" content="2024-06-23">
-<meta name="description" content="WebShot is a tool to render interactive widgets in non-interactive output formats. This document describes my experiences with webshot and webshot2 in quarto.">
+<meta name="description" content="setting up reproducible environments with package managers">
 
-<title>Christian Stankov - WebShot vs.&nbsp;WebShot2</title>
+<title>Christian Stankov - package manager</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -127,29 +127,22 @@ ul.task-list li input[type="checkbox"] {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#unterschiede-und-kompatibilität" id="toc-unterschiede-und-kompatibilität" class="nav-link active" data-scroll-target="#unterschiede-und-kompatibilität">Unterschiede und Kompatibilität</a></li>
-  <li><a href="#aktuelle-präferenzen-und-funktionen" id="toc-aktuelle-präferenzen-und-funktionen" class="nav-link" data-scroll-target="#aktuelle-präferenzen-und-funktionen">Aktuelle Präferenzen und Funktionen</a></li>
-  </ul>
-</nav>
+        
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">WebShot vs.&nbsp;WebShot2</h1>
+<h1 class="title">package manager</h1>
   <div class="quarto-categories">
-    <div class="quarto-category">Quarto</div>
+    <div class="quarto-category">setup</div>
   </div>
   </div>
 
 <div>
   <div class="description">
-    WebShot is a tool to render interactive widgets in non-interactive output formats. This document describes my experiences with webshot and webshot2 in quarto.
+    setting up reproducible environments with package managers
   </div>
 </div>
 
@@ -178,17 +171,9 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Dieses Dokument beschreibt den Einsatz von Web Shot und Web Shot 2. Diese Tools werden verwendet, um interaktive Widgets, wie zum Beispiel Plotly-Grafiken oder Leaflet-Maps, in nicht-interaktiven Outputformaten, wie einer PDF-Datei, darzustellen.</p>
-<section id="unterschiede-und-kompatibilität" class="level2">
-<h2 class="anchored" data-anchor-id="unterschiede-und-kompatibilität">Unterschiede und Kompatibilität</h2>
-<p>Bei der Verwendung von Web Shot und Web Shot 2 gibt es Unterschiede, insbesondere hinsichtlich der Kompatibilität und der Methoden, wie der Output generiert wird. Web Shot verwendet PhantomJS, welches auch über das Web Shot-Paket installiert werden kann. Im Gegensatz dazu benötigt Web Shot 2 einen Chrome- oder Chromium-Browser, um zu funktionieren, und setzt nicht mehr auf PhantomJS.</p>
-</section>
-<section id="aktuelle-präferenzen-und-funktionen" class="level2">
-<h2 class="anchored" data-anchor-id="aktuelle-präferenzen-und-funktionen">Aktuelle Präferenzen und Funktionen</h2>
-<p>Derzeit wird Web Shot bevorzugt, da das Resizing über die Argumente ‘fig.size’ und ‘fig.width’ unterstützt wird. Bei Web Shot 2 scheint diese Funktion momentan nicht verfügbar zu sein.</p>
+<p>Using diff</p>
 
 
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

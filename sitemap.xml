@@ -2,30 +2,30 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://chrisenv.github.io/index.html</loc>
-    <lastmod>2024-06-22T07:26:29.872Z</lastmod>
+    <lastmod>2024-06-23T13:18:50.454Z</lastmod>
   </url>
   <url>
     <loc>https://chrisenv.github.io/content/about.html</loc>
-    <lastmod>2024-06-22T07:26:29.856Z</lastmod>
+    <lastmod>2024-06-23T13:18:50.422Z</lastmod>
   </url>
   <url>
     <loc>https://chrisenv.github.io/content/blog/02-webshot/webshot.html</loc>
-    <lastmod>2024-06-22T07:26:29.868Z</lastmod>
-  </url>
-  <url>
-    <loc>https://chrisenv.github.io/content/blog/03-quarto_js/quarto_js.html</loc>
-    <lastmod>2024-06-22T07:26:29.872Z</lastmod>
-  </url>
-  <url>
-    <loc>https://chrisenv.github.io/content/start.html</loc>
-    <lastmod>2024-06-22T07:26:29.872Z</lastmod>
+    <lastmod>2024-06-23T13:18:50.434Z</lastmod>
   </url>
   <url>
     <loc>https://chrisenv.github.io/content/blog/01-rstudio_cleanup_guide/RStudio_Cleanup_Guide.html</loc>
-    <lastmod>2024-06-22T07:26:29.860Z</lastmod>
+    <lastmod>2024-06-23T13:18:50.422Z</lastmod>
+  </url>
+  <url>
+    <loc>https://chrisenv.github.io/content/start.html</loc>
+    <lastmod>2024-06-23T13:18:50.454Z</lastmod>
+  </url>
+  <url>
+    <loc>https://chrisenv.github.io/content/blog/03-quarto_js/quarto_js.html</loc>
+    <lastmod>2024-06-23T13:18:50.434Z</lastmod>
   </url>
   <url>
     <loc>https://chrisenv.github.io/content/blog.html</loc>
-    <lastmod>2024-06-22T07:26:29.860Z</lastmod>
+    <lastmod>2024-06-23T13:18:50.422Z</lastmod>
   </url>
 </urlset>
