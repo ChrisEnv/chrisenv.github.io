@@ -63,6 +63,55 @@
     "text": "Aktuelle Präferenzen und Funktionen\nDerzeit wird Web Shot bevorzugt, da das Resizing über die Argumente ‘fig.size’ und ‘fig.width’ unterstützt wird. Bei Web Shot 2 scheint diese Funktion momentan nicht verfügbar zu sein."
   },
   {
+    "objectID": "content/blog/05-sysmlv2-kernel-syside/sysml-kernel-syside.html",
+    "href": "content/blog/05-sysmlv2-kernel-syside/sysml-kernel-syside.html",
+    "title": "SysML v2 Kernel & Syside Setup",
+    "section": "",
+    "text": "SysMLv2 is rapidly establishing itself as the next-generation modeling language for systems engineering. One of the most convenient ways to explore the SysMLv2 Pilot Implementation is to use it interactively inside JupyterNotebooks or JupyterLab via the SysMLv2 Jupyter Kernel. This kernel allows you to execute SysML textual notation directly in notebook cells, run magic commands, query local repositories, and interact with the SysML API server.\nThis guide describes a reliable, working method to install the most recent SysMLv2 Jupyter Kernel on macOS, using:"
+  },
+  {
+    "objectID": "content/blog/05-sysmlv2-kernel-syside/sysml-kernel-syside.html#what-is-a-kernel",
+    "href": "content/blog/05-sysmlv2-kernel-syside/sysml-kernel-syside.html#what-is-a-kernel",
+    "title": "SysML v2 Kernel & Syside Setup",
+    "section": "What is a Kernel?",
+    "text": "What is a Kernel?\nA kernel is a program that runs and interprets code in a specific programming language within an interactive computing environment, such as Jupyter Notebooks or JupyterLab. It acts as a bridge between the user interface and the underlying execution environment, allowing users to write and execute code in a particular language. Additionally, kernels can provide features like magic commands.\n%help\n%viz"
+  },
+  {
+    "objectID": "content/blog/05-sysmlv2-kernel-syside/sysml-kernel-syside.html#prerequisites",
+    "href": "content/blog/05-sysmlv2-kernel-syside/sysml-kernel-syside.html#prerequisites",
+    "title": "SysML v2 Kernel & Syside Setup",
+    "section": "Prerequisites",
+    "text": "Prerequisites\n\nInstall Homebrew\nIf you haven’t already installed Homebrew, you can do so by running the following command in your terminal:\n/bin/bash -c \"$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)\"\n\n\nInstall git\nIf you haven’t already installed git, you can do so using Homebrew. Git is used to clone the SysML v2 Release repository.\nbrew install git\n\n\nInstall Miniconda\nWe use Miniconda as a lightweight package manager to manage our Python environment. Install Miniconda using Homebrew:\nbrew install --cask miniconda\n\n\nInstall jenv (Java Version Manager)\nWe use jenv to manage Java versions. Install jenv using Homebrew:\nbrew install jenv"
+  },
+  {
+    "objectID": "content/blog/05-sysmlv2-kernel-syside/sysml-kernel-syside.html#install-activate-java",
+    "href": "content/blog/05-sysmlv2-kernel-syside/sysml-kernel-syside.html#install-activate-java",
+    "title": "SysML v2 Kernel & Syside Setup",
+    "section": "Install & Activate Java",
+    "text": "Install & Activate Java\nThe current SysMLv2 Kernel requires Java 21. The SysML v2 Release defines the required Java version as 21 under the Install Seciton\n\nInstall Java 21\nInstall Java 21 using homebrew:\nbrew install openjdk@21\n\n\nAdd Java 21 to jenv\nAdd the installed Java version to jenv:\n1jenv add /code-annotations: hover\n\n1\n\nAdjust the path if necessary, depending on your Homebrew installation location.\n\n\n\n\nActivate Java 21 globally\nSet Java 21 as the global Java version:\njenv global 21\njava -version\nThe expected output should indicate that Java 21 is active."
+  },
+  {
+    "objectID": "content/blog/05-sysmlv2-kernel-syside/sysml-kernel-syside.html#install-jupyterlab",
+    "href": "content/blog/05-sysmlv2-kernel-syside/sysml-kernel-syside.html#install-jupyterlab",
+    "title": "SysML v2 Kernel & Syside Setup",
+    "section": "Install JupyterLab",
+    "text": "Install JupyterLab\nIf JupyterLab is not already installed, you can install it using conda:\nconda install jupyterlab notebook"
+  },
+  {
+    "objectID": "content/blog/05-sysmlv2-kernel-syside/sysml-kernel-syside.html#install-sysmlv2-kernel",
+    "href": "content/blog/05-sysmlv2-kernel-syside/sysml-kernel-syside.html#install-sysmlv2-kernel",
+    "title": "SysML v2 Kernel & Syside Setup",
+    "section": "Install SysMLv2 Kernel",
+    "text": "Install SysMLv2 Kernel\nThe installation process is defined by the SysML v2 Release.\n\nClone the SysML v2 Release Repository\nBefore installing the kernel, you need to clone the SysMLv2 Pilot Implementation repository. This repository contains the Jupyter integration scripts, examples, and the SysML textual tooling.\nFirst, navigate to your desired installation directory and clone the repository:\n1cd PATH\ngit clone https://github.com/Systems-Modeling/SysML-v2-Pilot-Implementation.git \n\n1\n\nReplace PATH with your desired installation directory.\n\n\n\n\nInstall the SysMLv2 Jupyter Kernel\nNavigate to the Jupyter installation directory within the cloned repository and run the installation script:\ncd SysML-v2-Pilot-Implementation/install/jupyter\nchmod +x ./install.sh\n./install.sh\n\n\nEnsure Kernel Registration\nRunning the installation script places the SysMLv2 Jupyter kernel on your system, but it’s important to verify that Jupyter actually recognizes it. The kernel must be correctly registered so Jupyter knows how to launch the SysML engine, where the Java runtime is located, and which classpath to use.\njupyter kernelspec list\nIf the SysML kernel does not appear, or if you notice that the kernelspec path points to a stale directory (e.g., a conda cache), you can refresh the registration by reinstalling the Jupyter integration layer:\nconda install -c conda-forge jupyter-sysml-kernel --force-reinstall\nThis step does not replace the SysMLv2 Pilot Implementation you cloned earlier. Instead, it ensures that Jupyter’s kernel registry is in a clean and consistent state so the SysML kernel starts reliably."
+  },
+  {
+    "objectID": "content/blog/05-sysmlv2-kernel-syside/sysml-kernel-syside.html#integrate-sysmlv2-kernel-with-vscode-syside",
+    "href": "content/blog/05-sysmlv2-kernel-syside/sysml-kernel-syside.html#integrate-sysmlv2-kernel-with-vscode-syside",
+    "title": "SysML v2 Kernel & Syside Setup",
+    "section": "Integrate SysMLv2 Kernel with VSCode (Syside)",
+    "text": "Integrate SysMLv2 Kernel with VSCode (Syside)\n\n\n\n\n\n\nImportant\n\n\n\nThe kernel can be used within JupyterLab or Jupyter Notebooks. However, I would recommend using VSCode with the Syside Extension for a more integrated SysMLv2 modeling experience.\n\n\nTo use the SysMLv2 Kernel within VSCode, ensure you have the Jupyter Extension installed. This extension allows you to run Jupyter notebooks directly in VSCode. The SysMLv2 Kernel should automatically appear as an option when you create or open a Jupyter notebook."
+  },
+  {
     "objectID": "content/start.html",
     "href": "content/start.html",
     "title": "Next Page",
@@ -74,6 +123,6 @@
     "href": "content/blog.html",
     "title": "Christian Stankov",
     "section": "",
-    "text": "Order By\n      Default\n      \n        Title\n      \n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\nRStudio Environment Cleanup Guide\n\n\n\nRStudio\n\nQuarto\n\nsetup\n\n\n\nStep-by-step instructions for cleaning up your RStudio environment on Mac and Windows.\n\n\n\nJun 23, 2024\n\n\n\n\n\n\n\n\n\n\n\n\n\nWebShot vs. WebShot2\n\n\n\nQuarto\n\n\n\nWebShot is a tool to render interactive widgets in non-interactive output formats. This document describes my experiences with webshot and webshot2 in quarto.\n\n\n\nJun 23, 2024\n\n\n\n\n\n\n\n\n\n\n\n\n\nJavaScript in Quarto\n\n\n\nQuarto\n\n\n\nFirst glance on how to embed JavaScript in Quarto.\n\n\n\nJun 23, 2024\n\n\n\n\n\n\nNo matching items"
+    "text": "Order By\n      Default\n      \n        Title\n      \n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\nSysML v2 Kernel & Syside Setup\n\n\n\nsetup\n\nSysML v2\n\n\n\ninstall SysML v2 Kernel and integrate with Syside IDE (VSCode)\n\n\n\nNov 30, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\nRStudio Environment Cleanup Guide\n\n\n\nRStudio\n\nQuarto\n\nsetup\n\n\n\nStep-by-step instructions for cleaning up your RStudio environment on Mac and Windows.\n\n\n\nJun 23, 2024\n\n\n\n\n\n\n\n\n\n\n\n\n\nWebShot vs. WebShot2\n\n\n\nQuarto\n\n\n\nWebShot is a tool to render interactive widgets in non-interactive output formats. This document describes my experiences with webshot and webshot2 in quarto.\n\n\n\nJun 23, 2024\n\n\n\n\n\n\n\n\n\n\n\n\n\nJavaScript in Quarto\n\n\n\nQuarto\n\n\n\nFirst glance on how to embed JavaScript in Quarto.\n\n\n\nJun 23, 2024\n\n\n\n\n\n\nNo matching items"
   }
 ]
