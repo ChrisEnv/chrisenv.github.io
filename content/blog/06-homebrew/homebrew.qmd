@@ -1,0 +1,11 @@
+---
+title: "homebrew"
+description: "introduction to homebrew"
+author: "Christian Stankov"
+date: "11/30/2025"
+categories: ["setup"]
+
+draft: true
+---
+
+Homebrew is a popular package manager for macOS (and Linux) that simplifies the installation, updating, and management of software packages. It allows users to easily install command-line tools and applications that are not included by default in the operating system.
