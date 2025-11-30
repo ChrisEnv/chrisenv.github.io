@@ -7,25 +7,11 @@
     "text": "Welcome to my personal website! I am an engineer with a background in environmental engineering and a passion for digitalization. I am currently working as a process engineer at p2m Berlin, where I am responsible for the automation of planning processes. I am also a Quarto enthusiast and enjoy creating interactive content with Quarto. Feel free to reach out to me via email or connect with me on LinkedIn or GitHub."
   },
   {
-    "objectID": "content/blog/02-webshot/webshot.html",
-    "href": "content/blog/02-webshot/webshot.html",
-    "title": "WebShot vs. WebShot2",
+    "objectID": "content/blog/03-quarto_js/quarto_js.html",
+    "href": "content/blog/03-quarto_js/quarto_js.html",
+    "title": "JavaScript in Quarto",
     "section": "",
-    "text": "Dieses Dokument beschreibt den Einsatz von Web Shot und Web Shot 2. Diese Tools werden verwendet, um interaktive Widgets, wie zum Beispiel Plotly-Grafiken oder Leaflet-Maps, in nicht-interaktiven Outputformaten, wie einer PDF-Datei, darzustellen."
-  },
-  {
-    "objectID": "content/blog/02-webshot/webshot.html#unterschiede-und-kompatibilität",
-    "href": "content/blog/02-webshot/webshot.html#unterschiede-und-kompatibilität",
-    "title": "WebShot vs. WebShot2",
-    "section": "Unterschiede und Kompatibilität",
-    "text": "Unterschiede und Kompatibilität\nBei der Verwendung von Web Shot und Web Shot 2 gibt es Unterschiede, insbesondere hinsichtlich der Kompatibilität und der Methoden, wie der Output generiert wird. Web Shot verwendet PhantomJS, welches auch über das Web Shot-Paket installiert werden kann. Im Gegensatz dazu benötigt Web Shot 2 einen Chrome- oder Chromium-Browser, um zu funktionieren, und setzt nicht mehr auf PhantomJS."
-  },
-  {
-    "objectID": "content/blog/02-webshot/webshot.html#aktuelle-präferenzen-und-funktionen",
-    "href": "content/blog/02-webshot/webshot.html#aktuelle-präferenzen-und-funktionen",
-    "title": "WebShot vs. WebShot2",
-    "section": "Aktuelle Präferenzen und Funktionen",
-    "text": "Aktuelle Präferenzen und Funktionen\nDerzeit wird Web Shot bevorzugt, da das Resizing über die Argumente ‘fig.size’ und ‘fig.width’ unterstützt wird. Bei Web Shot 2 scheint diese Funktion momentan nicht verfügbar zu sein."
+    "text": "Today we are diving into the world of JavaScript and how to embed it in Quarto. JavaScript is a powerful language that can be used to create interactive elements on a webpage. In this example, we will create a 3D cube using JavaScript and embed it in a Quarto document.\n::: {.cube-container}\n&lt;div id=\"cube\"&gt;\n  &lt;div class=\"face front\"&gt;quarto&lt;/div&gt;\n  &lt;div class=\"face back\"&gt;p2m&lt;/div&gt;\n  &lt;div class=\"face right\"&gt;water&lt;/div&gt;\n  &lt;div class=\"face left\"&gt;data&lt;/div&gt;\n  &lt;div class=\"face top\"&gt;simulation&lt;/div&gt;\n  &lt;div class=\"face bottom\"&gt;chrisenv&lt;/div&gt;\n&lt;/div&gt;\n:::\n\n\n\nquarto\n\n\np2m\n\n\nwater\n\n\ndata\n\n\nsimulation\n\n\nchrisenv"
   },
   {
     "objectID": "content/blog/01-rstudio_cleanup_guide/RStudio_Cleanup_Guide.html",
@@ -56,11 +42,25 @@
     "text": "General Maintenance Tips\n\nRegular Updates: Keep R, RStudio, and all packages up to date. Use brew upgrade on Mac and choco upgrade all on Windows.\nBackup Important Files: Regularly back up your scripts, data files, and configurations. Consider using cloud storage or external drives for backups.\nDisk Cleanup: Utilize built-in system tools for disk cleanup or third-party tools to clear temporary files and other system junk to maintain system performance."
   },
   {
-    "objectID": "content/blog/03-quarto_js/quarto_js.html",
-    "href": "content/blog/03-quarto_js/quarto_js.html",
-    "title": "JavaScript in Quarto",
+    "objectID": "content/blog/02-webshot/webshot.html",
+    "href": "content/blog/02-webshot/webshot.html",
+    "title": "WebShot vs. WebShot2",
     "section": "",
-    "text": "Today we are diving into the world of JavaScript and how to embed it in Quarto. JavaScript is a powerful language that can be used to create interactive elements on a webpage. In this example, we will create a 3D cube using JavaScript and embed it in a Quarto document.\n::: {.cube-container}\n&lt;div id=\"cube\"&gt;\n  &lt;div class=\"face front\"&gt;quarto&lt;/div&gt;\n  &lt;div class=\"face back\"&gt;p2m&lt;/div&gt;\n  &lt;div class=\"face right\"&gt;water&lt;/div&gt;\n  &lt;div class=\"face left\"&gt;data&lt;/div&gt;\n  &lt;div class=\"face top\"&gt;simulation&lt;/div&gt;\n  &lt;div class=\"face bottom\"&gt;chrisenv&lt;/div&gt;\n&lt;/div&gt;\n:::\n\n\n\nquarto\n\n\np2m\n\n\nwater\n\n\ndata\n\n\nsimulation\n\n\nchrisenv"
+    "text": "Dieses Dokument beschreibt den Einsatz von Web Shot und Web Shot 2. Diese Tools werden verwendet, um interaktive Widgets, wie zum Beispiel Plotly-Grafiken oder Leaflet-Maps, in nicht-interaktiven Outputformaten, wie einer PDF-Datei, darzustellen."
+  },
+  {
+    "objectID": "content/blog/02-webshot/webshot.html#unterschiede-und-kompatibilität",
+    "href": "content/blog/02-webshot/webshot.html#unterschiede-und-kompatibilität",
+    "title": "WebShot vs. WebShot2",
+    "section": "Unterschiede und Kompatibilität",
+    "text": "Unterschiede und Kompatibilität\nBei der Verwendung von Web Shot und Web Shot 2 gibt es Unterschiede, insbesondere hinsichtlich der Kompatibilität und der Methoden, wie der Output generiert wird. Web Shot verwendet PhantomJS, welches auch über das Web Shot-Paket installiert werden kann. Im Gegensatz dazu benötigt Web Shot 2 einen Chrome- oder Chromium-Browser, um zu funktionieren, und setzt nicht mehr auf PhantomJS."
+  },
+  {
+    "objectID": "content/blog/02-webshot/webshot.html#aktuelle-präferenzen-und-funktionen",
+    "href": "content/blog/02-webshot/webshot.html#aktuelle-präferenzen-und-funktionen",
+    "title": "WebShot vs. WebShot2",
+    "section": "Aktuelle Präferenzen und Funktionen",
+    "text": "Aktuelle Präferenzen und Funktionen\nDerzeit wird Web Shot bevorzugt, da das Resizing über die Argumente ‘fig.size’ und ‘fig.width’ unterstützt wird. Bei Web Shot 2 scheint diese Funktion momentan nicht verfügbar zu sein."
   },
   {
     "objectID": "content/start.html",
