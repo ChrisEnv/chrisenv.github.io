@@ -22,7 +22,7 @@ website:
         href: https://github.com/ChrisEnv/chrisenv.github.io
         aria-label: GitHub repo
       - icon: linkedin
-        href: https://linkedin.com/in/christian-stankov-eng
+        href: https://linkedin.com/in/christian-stankov
         aria-label: LinkedIn
 format:
   html:
