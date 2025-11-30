@@ -109,7 +109,7 @@
     "href": "content/blog/05-sysmlv2-kernel-syside/sysml-kernel-syside.html#integrate-sysmlv2-kernel-with-vscode-syside",
     "title": "SysML v2 Kernel & Syside Setup",
     "section": "Integrate SysMLv2 Kernel with VSCode (Syside)",
-    "text": "Integrate SysMLv2 Kernel with VSCode (Syside)\n\n\n\n\n\n\nImportant\n\n\n\nThe kernel can be used within JupyterLab or Jupyter Notebooks. However, I would recommend using VSCode with the Syside Extension for a more integrated SysMLv2 modeling experience.\n\n\nTo use the SysMLv2 Kernel within VSCode, ensure you have the Jupyter Extension installed. This extension allows you to run Jupyter notebooks directly in VSCode. The SysMLv2 Kernel should automatically appear as an option when you create or open a Jupyter notebook."
+    "text": "Integrate SysMLv2 Kernel with VSCode (Syside)\n\n\n\n\n\n\nImportant\n\n\n\nThe kernel can be used within JupyterLab or Jupyter Notebooks. However, I would recommend using VSCode with the Syside Extension for a more integrated SysMLv2 modeling experience.\n\n\nTo use the SysMLv2 Kernel within VSCode, ensure you have the Jupyter Extension installed. This extension allows you to run Jupyter notebooks directly in VSCode. The SysMLv2 Kernel should automatically appear as an option when you create or open a Jupyter notebook.\n\n\n\nSysMLv2 Kernel in VSCode"
   },
   {
     "objectID": "content/start.html",
