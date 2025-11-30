@@ -56,13 +56,6 @@
     "text": "General Maintenance Tips\n\nRegular Updates: Keep R, RStudio, and all packages up to date. Use brew upgrade on Mac and choco upgrade all on Windows.\nBackup Important Files: Regularly back up your scripts, data files, and configurations. Consider using cloud storage or external drives for backups.\nDisk Cleanup: Utilize built-in system tools for disk cleanup or third-party tools to clear temporary files and other system junk to maintain system performance."
   },
   {
-    "objectID": "content/start.html",
-    "href": "content/start.html",
-    "title": "Next Page",
-    "section": "",
-    "text": "Welcome to the Next Page!\nThis is the continuation of our journey. Jeremy is giga chad."
-  },
-  {
     "objectID": "content/blog/03-quarto_js/quarto_js.html",
     "href": "content/blog/03-quarto_js/quarto_js.html",
     "title": "JavaScript in Quarto",
@@ -70,10 +63,17 @@
     "text": "Today we are diving into the world of JavaScript and how to embed it in Quarto. JavaScript is a powerful language that can be used to create interactive elements on a webpage. In this example, we will create a 3D cube using JavaScript and embed it in a Quarto document.\n::: {.cube-container}\n&lt;div id=\"cube\"&gt;\n  &lt;div class=\"face front\"&gt;quarto&lt;/div&gt;\n  &lt;div class=\"face back\"&gt;p2m&lt;/div&gt;\n  &lt;div class=\"face right\"&gt;water&lt;/div&gt;\n  &lt;div class=\"face left\"&gt;data&lt;/div&gt;\n  &lt;div class=\"face top\"&gt;simulation&lt;/div&gt;\n  &lt;div class=\"face bottom\"&gt;chrisenv&lt;/div&gt;\n&lt;/div&gt;\n:::\n\n\n\nquarto\n\n\np2m\n\n\nwater\n\n\ndata\n\n\nsimulation\n\n\nchrisenv"
   },
   {
+    "objectID": "content/start.html",
+    "href": "content/start.html",
+    "title": "Next Page",
+    "section": "",
+    "text": "Welcome to the Next Page!\nThis is the continuation of our journey. Jeremy is giga chad."
+  },
+  {
     "objectID": "content/blog.html",
     "href": "content/blog.html",
     "title": "Christian Stankov",
     "section": "",
-    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\nRStudio Environment Cleanup Guide\n\n\n\nRStudio\n\n\nQuarto\n\n\nsetup\n\n\n\nStep-by-step instructions for cleaning up your RStudio environment on Mac and Windows.\n\n\n\nJun 23, 2024\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWebShot vs. WebShot2\n\n\n\nQuarto\n\n\n\nWebShot is a tool to render interactive widgets in non-interactive output formats. This document describes my experiences with webshot and webshot2 in quarto.\n\n\n\nJun 23, 2024\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJavaScript in Quarto\n\n\n\nQuarto\n\n\n\nFirst glance on how to embed JavaScript in Quarto.\n\n\n\nJun 23, 2024\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Order By\n      Default\n      \n        Title\n      \n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\nRStudio Environment Cleanup Guide\n\n\n\nRStudio\n\nQuarto\n\nsetup\n\n\n\nStep-by-step instructions for cleaning up your RStudio environment on Mac and Windows.\n\n\n\nJun 23, 2024\n\n\n\n\n\n\n\n\n\n\n\n\n\nWebShot vs. WebShot2\n\n\n\nQuarto\n\n\n\nWebShot is a tool to render interactive widgets in non-interactive output formats. This document describes my experiences with webshot and webshot2 in quarto.\n\n\n\nJun 23, 2024\n\n\n\n\n\n\n\n\n\n\n\n\n\nJavaScript in Quarto\n\n\n\nQuarto\n\n\n\nFirst glance on how to embed JavaScript in Quarto.\n\n\n\nJun 23, 2024\n\n\n\n\n\n\nNo matching items"
   }
 ]
