@@ -3,18 +3,14 @@ title: "Christian Stankov's CV"
 author:
   firstname: Christian
   lastname: Stankov
-  address: "Baumbachstraße 6 – 13189 Berlin – Germany"
-  position: "17 Feb 1994, Berlin"
+  address: "Berlin – Germany"
   contacts:
-    - icon: fa phone
-      text: +49 152 2629 8013
     - icon: fa envelope
-      text: christianstankov@posteo.de
-      url: "mailto:christianstankov@posteo.de"
+      text: chrisenv@posteo.de
+      url: "mailto:chrisenv@posteo.de"
     - icon: fa linkedin
       text: /in/christian-stankov
       url: https://www.linkedin.com/in/christian-stankov/
-profile-photo: "cv-photo-stankov.png"
 
 format: awesomecv-typst
 ---
