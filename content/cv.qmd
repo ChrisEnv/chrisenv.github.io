@@ -1,187 +1,147 @@
 ---
-title: "Christian Stankov's CV"
+title: "Christian Stankovs CV"
 author:
   firstname: Christian
   lastname: Stankov
-  address: "Baumbachstraße 6 – 13189 Berlin – Germany"
-  position: "17 Feb 1994, Berlin"
+  address: "DE-13189 Berlin, Deutschland, Berlin"
+  position: "17.02.1994, Berlin"
   contacts:
-    - icon: fa phone
-      text: +49 152 2629 8013
+    # - icon: assets/icon/phone-solid.svg
+    #   text: 
     - icon: fa envelope
-      text: christianstankov@posteo.de
-      url: "mailto:christianstankov@posteo.de"
-    - icon: fa linkedin
-      text: /in/christian-stankov
-      url: https://www.linkedin.com/in/christian-stankov/
-profile-photo: "cv-photo-stankov.png"
+      text: chrisenv@posteo.de
+      url: "mailto:chrisenv@posteo.de"
+    - icon: assets/icon/bi-house-fill.svg
+      text: website
+      url: https://chrisenv.github.io/
+    - icon: fa brands github
+      text: GitHub
+      url: https://github.com/ChrisEnv
+    - icon: fa brands linkedin
+      text: LinkedIn
+      url: www.linkedin.com/in/christian-stankov-eng
 
 format: awesomecv-typst
 ---
 
-## Professional Experience
+## Akademische Ausbildung
 
 ```{=typst}
 #resume-entry(
-  title: "Process Engineer / Digital Transformation Engineer",
-  location: "p2m Berlin",
-  date: "since 05/2023",
-  description: "Digital Engineering:"
-)
-#resume-item[
-  - Design and implementation of data-centric design workflows
-  - Development of a turbo compressor planning application
-  - Development of a project controlling tool
-  - Conceptualization of BIM-compliant planning approaches
-  - Package development (R)
-]
-#resume-item[
-  Data Analytics:
-  - Collection, cleaning, analysis, visualization and presentation of process data
-  - Benchmarking of wastewater treatment plants
-  - Development of interactive dashboards and reports
-]
-#resume-item[
-  Process Engineering:
-  - Design of a €10 M wastewater treatment plant’s air-supply system with turbo compressors
-  - Anaerobic digestion feasibility study for a wastewater treatment plant
-  - Energy analysis according to DWA-A 216
-  - Process design and optimization
-  - Supervision of a research project (FlexTreat)
-]
-
-#resume-entry(
-  title: "Business Owner",
-  location: "clean-house Bernau",
-  description: "Takeover of the family business:",
-  date: "since 2020"
-)
-#resume-item[
-  - Administrative activities
-  - Energy optimization of operations (heat recovery)
-]
-
-#resume-entry(
-  title: "Freelancer",
-  location: "",
-  date: "2017 – 2023",
-  description: "Tutoring in mathematics: university foundation modules and German a-levels",
-)
-
-#resume-entry(
-  title: "Working Student",
-  location: "Kompetenzzentrum Wasser Berlin",
-  date: "10/2017 – 10/2018",
-  description: "Preliminary design of wastewater treatment processes and adsorption analyses",
-)
-
-#resume-entry(
-  title: "Intern",
-  location: "BUND e.V.",
-  date: "08/2015 – 10/2015",
-  description: "Reduction of energy consumption in hospitals"
-)
-```
-
-## Academic Education
-
-```{=typst}
-#resume-entry(
-  title: "M.Sc. Environmental Engineering (1.2)",
+  title: "M.Sc. Technischer Umweltschutz (1,2)",
   location: "TU Berlin",
-  date: "2017 – 2022",
-  description: "Thesis: Development and validation of a simulation of low-temperature distillation and crystallization for treating wastewater concentrates",
+  date: "2017 - 2022",
+  description: "Thesis: Erstellung und Validierung einer Simulation der Niedertemperaturdestillation und Kristallisation zur Aufbereitung von Abwasserkonzentraten",
 )
 #resume-item[
-  Focus areas:
-  - Environmental process engineering
-  - Wastewater process engineering
-  - Urban water management
+  Schwerpunkte:
+  - Umweltprozesstechnik
+  - Abwasserverfahrenstechnik
+  - Siedlungswasserwirtschaft
 ]
-
 #resume-entry(
-  title: "B.Sc. Environmental Engineering (2.4)",
+  title: "B.Sc. Technischer Umweltschutz (2,4)",
   location: "TU Berlin",
-  date: "2012 – 2017",
-  description: "Thesis: End-of-life assessment of the bicycle life cycle",
+  date: "2012 - 2017",
+  description: "Thesis: End of Life Betrachtung des Fahrradlebenszyklus",
 )
-
 #resume-entry(
-  title: "Abitur (1.8)",
+  title: "Abitur (1,8)",
   location: "Barnim Gymnasium",
-  date: "2005 – 2012",
+  date: "2005 - 2012",
   description: "Schnellläuferklasse",
 )
 ```
 
-## Personal Skills
+## Berufliche Laufbahn
 
 ```{=typst}
 #resume-entry(
-  title: "Languages",
-  description: "German (native), English (business fluent), French (basic)"
+  title: "Verfahrensingenieur/Digitalisierung ",
+  location: "p2m Berlin",
+  date: "seit 05/2023",
+  description: "Automatisierung von Planungsprozessen:"
 )
-
+#resume-item[
+  - Einführung git
+  - automatisierte Erstellung Planungsunterlagen (Quarto)
+]
+#resume-item[
+  Projektarbeit Verfahrenstechnik:
+  - Data Science (Betriebsdaten)
+  - Benchmarking
+  - Prozessoptimierung
+  - verfahrenstechnische Auslegung
+]
 #resume-entry(
-  title: "Programming",
-  description: "R, R-Shiny, Git, Quarto, LaTeX"
+  title: "Geschäftsinhaber",
+  location: "clean-house Bernau",
+  description: "Übernahme des Familienbetriebes:",
+  date: "seit 2020"
+)
+#resume-item[
+  - Sicherung aller 6 Arbeitsplätze in der Corona Pandemie
+  - energetische Optimierung des Betriebes
+  - administrative Tätigkeiten
+]
+#resume-entry(
+  title: "Freiberufler",
+  location: "online",
+  date: "2017 - 2023",
+  description: "Nachhilfe Mathematik",
 )
 #resume-entry(
-  description: "Basics: Python, SQL, CI/CD, C, SysML (v2), NetLogo, Typst"
+  title: "Werkstudent",
+  location: "KWB",
+  date: "10/2017 - 10/2018",
+  description: "Grobauslegung Abwasseraufbereitung",
 )
+#resume-entry(
+  title: "Praktikum",
+  location: "BUND e.V.",
+  date: "08/2015 - 10/2015",
+  description: "Reduzierung Energieverbrauch von Krankenhäusern"
+)
+```
 
+## Fähigkeiten
+
+```{=typst}
+#resume-entry(
+  title: "Sprachen",
+  description: "Deutsch (Muttersprache), Englisch (verhandlungssicher), Französisch (Grundlagen)"
+)
+#resume-entry(
+  title: "Programmierung",
+  description: "R, R-Shiny, git, Quarto, LaTeX, Typst, SQL (Grundlagen), C (Grundlagen), NetLogo (Grundlagen)"
+)
 #resume-entry(
   title: "Software",
-  description: "MS Office, RStudio, GitHub, VSCode, Jupyter, Typst, Quarto, LaTeX, GitHub Desktop, Sourcetree, Odoo, Alfresco"
-)
-
-#resume-entry(
-  title: "Driver’s licence",
-  description: "Class B"
-)
-```
-
-## Certificates
-
-```{=typst}
-#resume-entry(
-  title: "Google Advanced Data Analytics",
-  location: "online",
-  date: "06/2025",
-  description: ""
+  description: "RStudio, GitHub, MS Office"
 )
 #resume-entry(
-  title: "Google Data Analytics (DE)",
-  location: "online",
-  date: "08/2024",
-  description: ""
+  title: "Führerschein",
+  description: "Klasse B"
 )
 ```
 
-## Courses
+## Kurse und Zertifikate
 
 ```{=typst}
 #resume-entry(
-  title: "Model Based Systems Engineering with SysML v2",
-  location: "Hamburg, Germany",
-  date: "2025",
-  description: ""
-)
-
-#resume-entry(
-  title: "TWEED Hybrid Summer School",
-  location: "Amman, Jordan",
+  title: "TWEED Hybrid Summer School ",
+  location: "Amman, Jordanien",
   date: "2022",
-  description: ""
+  description: "Klasse B"
 )
 ```
 
-## Academic Presentations
+## Vorträge
 
 ```{=typst}
 #resume-entry(
-  title: "Treatment of wastewater concentrates",
-  location: "Amman, Jordan",
+  title: "Aufbereitung von Abwasserkonzentraten",
+  location: "Amman, Jordanien",
   date: "2022",
   description: "1st GJU Symposium on Sustainable Development"
 )
