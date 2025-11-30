@@ -157,3 +157,5 @@ The kernel can be used within JupyterLab or Jupyter Notebooks. However, I would 
 :::
 
 To use the SysMLv2 Kernel within VSCode, ensure you have the [Jupyter Extension](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter) installed. This extension allows you to run Jupyter notebooks directly in VSCode. The SysMLv2 Kernel should automatically appear as an option when you create or open a Jupyter notebook.
+
+![SysMLv2 Kernel in VSCode](kernel_install_success.png)
