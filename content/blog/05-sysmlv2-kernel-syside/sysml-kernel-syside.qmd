@@ -1,8 +1,9 @@
 ---
 title: "SysML v2 Kernel & Syside Setup"
-description: "install SysML v2 Kernel and integrate with Syside IDE (VSCode)"
+description: "Install SysML v2 Kernel and integrate with Syside IDE (VSCode)"
 author: "Christian Stankov"
 date: "11/30/2025"
+image: kernel.png
 categories: ["setup", "SysML v2"]
 
 format:
