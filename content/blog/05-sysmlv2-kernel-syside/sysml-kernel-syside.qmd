@@ -3,6 +3,7 @@ title: "SysML v2 Kernel & Syside Setup"
 description: "Install SysML v2 Kernel and integrate with Syside IDE (VSCode)"
 author: "Christian Stankov"
 date: "11/30/2025"
+date-modified: last-modified
 image: kernel.png
 categories: ["setup", "SysML v2"]
 
@@ -22,7 +23,7 @@ This guide describes a reliable, working method to install the most recent SysML
 
  - [Homebrew](/content/blog/06-homebrew/homebrew.qmd)
  - Miniconda with conda-forge
- - jenv for Java version management
+ - [jenv](/content/blog/04-environment/environment.qmd#jenv) for Java version management
  - JupyterLab / Notebook
  
 ## What is a Kernel?
@@ -60,6 +61,24 @@ We use Miniconda as a lightweight package manager to manage our Python environme
 brew install --cask miniconda
 ```
 
+We now need to initialize conda for our shell (zsh in this case):
+
+```bash
+conda init zsh
+```
+
+Restart your terminal or run the following command to apply the changes:
+
+```bash
+exec $SHELL -l
+```
+
+Activate the base conda environment:
+
+```bash
+conda activate base
+```
+
 ### Install jenv (Java Version Manager)
 
 We use jenv to manage Java versions. Install jenv using Homebrew:
@@ -70,7 +89,7 @@ brew install jenv
 
 ## Install & Activate Java
 
-The current SysMLv2 Kernel requires Java 21. The [SysML v2 Release](https://github.com/Systems-Modeling/SysML-v2-Release) defines the required Java version as 21 under the [Install Seciton](https://github.com/Systems-Modeling/SysML-v2-Release/blob/master/install/jupyter/README.pdf) 
+The current SysMLv2 Kernel requires Java 21. The [SysML v2 Release](https://github.com/Systems-Modeling/SysML-v2-Release) defines the required Java version as 21 under the [Install Section](https://github.com/Systems-Modeling/SysML-v2-Release/blob/master/install/jupyter/README.pdf) 
 
 ### Install Java 21
 
@@ -85,7 +104,7 @@ brew install openjdk@21
 Add the installed Java version to jenv:
 
 ```bash
-jenv add /code-annotations: hover # <1>
+jenv add /opt/homebrew/opt/openjdk@21 # <1>
 ```
 
 1. Adjust the path if necessary, depending on your Homebrew installation location.
@@ -115,13 +134,13 @@ The installation process is defined by the [SysML v2 Release](https://github.com
 
 ### Clone the SysML v2 Release Repository
 
-Before installing the kernel, you need to clone the SysMLv2 Pilot Implementation repository. This repository contains the Jupyter integration scripts, examples, and the SysML textual tooling.
+Before installing the kernel, you need to clone the [SysML v2 Release repository](https://github.com/Systems-Modeling/SysML-v2-Release). This repository contains the Jupyter integration scripts, examples, and the SysML textual tooling.
 
 First, navigate to your desired installation directory and clone the repository:
 
 ```bash
 cd PATH        # <1>
-git clone https://github.com/Systems-Modeling/SysML-v2-Pilot-Implementation.git 
+git clone https://github.com/Systems-Modeling/SysML-v2-Release
 ```
 
 1. Replace `PATH` with your desired installation directory.
@@ -131,7 +150,7 @@ git clone https://github.com/Systems-Modeling/SysML-v2-Pilot-Implementation.git
 Navigate to the Jupyter installation directory within the cloned repository and run the installation script:
 
 ```bash
-cd SysML-v2-Pilot-Implementation/install/jupyter
+cd SysML-v2-Release/install/jupyter
 chmod +x ./install.sh
 ./install.sh
 ```
@@ -149,7 +168,7 @@ If the SysML kernel does not appear, or if you notice that the kernelspec path p
 ```bash
 conda install -c conda-forge jupyter-sysml-kernel --force-reinstall
 ```
-This step does not replace the SysMLv2 Pilot Implementation you cloned earlier. Instead, it ensures that Jupyter’s kernel registry is in a clean and consistent state so the SysML kernel starts reliably.
+This step does not replace the SysML v2 kernel you cloned earlier. Instead, it ensures that Jupyter’s kernel registry is in a clean and consistent state so the SysML kernel starts reliably.
 
 ## Integrate SysMLv2 Kernel with VSCode (Syside)
 

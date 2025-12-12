@@ -1,0 +1,9 @@
+---
+title: "Docker"
+description: "WIP"
+author: "Christian Stankov"
+date: today
+categories: ["setup"]
+
+draft: true
+---

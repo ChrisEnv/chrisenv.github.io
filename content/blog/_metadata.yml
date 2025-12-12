@@ -8,3 +8,12 @@ comments:
 
 # freeze computational output
 freeze: true
+
+date-modified: last-modified
+
+format:
+  html:
+    code-line-numbers: true
+    code-tools: 
+      source: false
+    code-annotations: below

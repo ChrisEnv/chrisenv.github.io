@@ -1,0 +1,20 @@
+---
+title: "Language Environment & Version Management"
+description: "venv, renv, jenv - what the env?"
+author: "Christian Stankov"
+date: "11/30/2024"
+image: blog_image.png
+categories: ["setup"]
+
+draft: true
+---
+
+## Introduction
+
+Package managers are essential tools for managing software installations and dependencies in a reproducible manner. They help ensure that your development environment remains consistent across different machines and setups. This guide provides an overview of popular package managers for various programming languages and platforms, along with best practices for using them effectively.
+
+## venv
+
+## jenv
+
+## renv

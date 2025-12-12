@@ -1,0 +1,82 @@
+---
+title: "SysML v2 API Server"
+description: "Install SysML v2 API Server"
+author: "Christian Stankov"
+date: "11/30/2025"
+image: api_server.png
+categories: ["setup", "SysML v2"]
+
+format:
+  html:
+    code-line-numbers: true
+    code-tools: 
+      source: false
+    code-annotations: below
+
+draft: true
+---
+
+The SysML v2 API Server (sometimes called SysML-v2-API-Services) is the reference backend implementation for the SysML v2 modeling standard from the OMG. This guide uses the [Pilot Implementation](https://github.com/Systems-Modeling/SysML-v2-API-Services) as the basis for setting up the API server. We will run the SysML v2 REST/HTTP API and Services locally on our machine.
+
+The [Pilot Implementation](https://github.com/Systems-Modeling/SysML-v2-API-Services) offers an installation guide which we will follow on our specific machine. Afterwards we will add a docker setup for easier management. Following steps will be covered:
+
+1. Setup database (PostgreSQL)
+2. Setup Java environment (using [jenv](/content/blog/04-environment/environment.qmd#jenv))
+3. Setup sbt
+4. Clone SysML v2 API Services repository
+5. Run SysML v2 API & Services 
+6. [Dockerize](/content/blog/08-docker/docker.qmd) SysML v2 API & Services
+
+## Setup database
+
+:::{.callout-important}
+[Docker](/content/blog/08-docker/docker.qmd) is required for this step.
+:::
+
+The pilot implementation uses PostgreSQL as the backend database. The easiest way to setup PostgreSQL locally is to run it as a Docker container. Use the docker pull command to download the docker image for the latest version of PostgreSQL available on [Docker Hub](https://hub.docker.com/_/postgres).
+
+```bash
+docker pull postgres:latest
+```
+
+Use the docker run command to start a docker container from the downloaded image, as shown below. This will initialize PostgreSQL database in a Docker container and make it available for an available port on your local machine, we will use port 5432.
+
+```bash
+docker run --name sysml2-postgres -p 5432:5432 -e POSTGRES_PASSWORD=mysecretpassword -e POSTGRES_DB=sysml2 -d postgres
+```
+
+Connect to the PostgreSQL database, running as a docker container, from any PostgreSQL client to verify. Use the following connection details.
+
+```bash
+Host = localhost
+Port = 5432
+User = postgres
+Password = mysecretpassword
+```
+
+## Setup Java
+
+This pilot implementation uses JDK 11 for compiling and running SysML v2 API and Services. Download and setup JDK 11 on your machine. You can use Oracle JDK 11 or OpenJDK 11. If you are using [jenv](/content/blog/04-environment/environment.qmd#jenv) for Java version management, add JDK 11 to jenv and set it as the local version.
+
+```bash
+jenv add /path/to/jdk11
+jenv local 11
+```
+
+## Setup sbt
+
+Sbt (Scala Build Tool) is used to build and run the SysML v2 API and Services; version 1.2.8 is required. Install sbt using Homebrew. 
+
+```bash
+brew install sbt
+```
+
+## Clone SysML v2 API Services repository
+
+## Run SysML v2 API & Services
+
+## Dockerize SysML v2 API & Services
+
+
+
+
