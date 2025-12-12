@@ -229,7 +229,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <div>
     <div class="quarto-title-meta-heading">Modified</div>
     <div class="quarto-title-meta-contents">
-      <p class="date-modified">December 1, 2025</p>
+      <p class="date-modified">December 12, 2025</p>
     </div>
   </div>
     
@@ -270,11 +270,17 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h3 class="anchored" data-anchor-id="install-miniconda">Install Miniconda</h3>
 <p>We use Miniconda as a lightweight package manager to manage our Python environment. Install Miniconda using Homebrew:</p>
 <div class="sourceCode" id="cb4"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1"></a><span class="ex">brew</span> install <span class="at">--cask</span> miniconda</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>We now need to initialize conda for our shell (zsh in this case):</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1"></a><span class="ex">conda</span> init zsh</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Restart your terminal or run the following command to apply the changes:</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1"></a><span class="bu">exec</span> <span class="va">$SHELL</span> <span class="at">-l</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Activate the base conda environment:</p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1"></a><span class="ex">conda</span> activate base</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="install-jenv-java-version-manager" class="level3">
 <h3 class="anchored" data-anchor-id="install-jenv-java-version-manager">Install jenv (Java Version Manager)</h3>
 <p>We use jenv to manage Java versions. Install jenv using Homebrew:</p>
-<div class="sourceCode" id="cb5"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1"></a><span class="ex">brew</span> install jenv</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb8"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb8-1"><a href="#cb8-1"></a><span class="ex">brew</span> install jenv</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 </section>
 <section id="install-activate-java" class="level2">
@@ -283,31 +289,31 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="install-java-21" class="level3">
 <h3 class="anchored" data-anchor-id="install-java-21">Install Java 21</h3>
 <p>Install Java 21 using homebrew:</p>
-<div class="sourceCode" id="cb6"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1"></a><span class="ex">brew</span> install openjdk@21</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb9"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb9-1"><a href="#cb9-1"></a><span class="ex">brew</span> install openjdk@21</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="add-java-21-to-jenv" class="level3">
 <h3 class="anchored" data-anchor-id="add-java-21-to-jenv">Add Java 21 to jenv</h3>
 <p>Add the installed Java version to jenv:</p>
-<div class="sourceCode" id="annotated-cell-7"><pre class="sourceCode numberSource bash code-annotation-code number-lines code-with-copy code-annotated"><code class="sourceCode bash"><a class="code-annotation-anchor" data-target-cell="annotated-cell-7" data-target-annotation="1" onclick="event.preventDefault();">1</a><span id="annotated-cell-7-1" class="code-annotation-target"><a href="#annotated-cell-7-1"></a><span class="ex">jenv</span> add /opt/homebrew/opt/openjdk@21</span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="annotated-cell-10"><pre class="sourceCode numberSource bash code-annotation-code number-lines code-with-copy code-annotated"><code class="sourceCode bash"><a class="code-annotation-anchor" data-target-cell="annotated-cell-10" data-target-annotation="1" onclick="event.preventDefault();">1</a><span id="annotated-cell-10-1" class="code-annotation-target"><a href="#annotated-cell-10-1"></a><span class="ex">jenv</span> add /opt/homebrew/opt/openjdk@21</span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <dl class="code-annotation-container-grid">
-<dt data-target-cell="annotated-cell-7" data-target-annotation="1">1</dt>
+<dt data-target-cell="annotated-cell-10" data-target-annotation="1">1</dt>
 <dd>
-<span data-code-cell="annotated-cell-7" data-code-lines="1" data-code-annotation="1">Adjust the path if necessary, depending on your Homebrew installation location.</span>
+<span data-code-cell="annotated-cell-10" data-code-lines="1" data-code-annotation="1">Adjust the path if necessary, depending on your Homebrew installation location.</span>
 </dd>
 </dl>
 </section>
 <section id="activate-java-21-globally" class="level3">
 <h3 class="anchored" data-anchor-id="activate-java-21-globally">Activate Java 21 globally</h3>
 <p>Set Java 21 as the global Java version:</p>
-<div class="sourceCode" id="cb7"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1"></a><span class="ex">jenv</span> global 21</span>
-<span id="cb7-2"><a href="#cb7-2"></a><span class="ex">java</span> <span class="at">-version</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb10"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb10-1"><a href="#cb10-1"></a><span class="ex">jenv</span> global 21</span>
+<span id="cb10-2"><a href="#cb10-2"></a><span class="ex">java</span> <span class="at">-version</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>The expected output should indicate that Java 21 is active.</p>
 </section>
 </section>
 <section id="install-jupyterlab" class="level2">
 <h2 class="anchored" data-anchor-id="install-jupyterlab">Install JupyterLab</h2>
 <p>If JupyterLab is not already installed, you can install it using conda:</p>
-<div class="sourceCode" id="cb8"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb8-1"><a href="#cb8-1"></a><span class="ex">conda</span> install jupyterlab notebook</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb11"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb11-1"><a href="#cb11-1"></a><span class="ex">conda</span> install jupyterlab notebook</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="install-sysmlv2-kernel" class="level2">
 <h2 class="anchored" data-anchor-id="install-sysmlv2-kernel">Install SysMLv2 Kernel</h2>
@@ -316,28 +322,28 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h3 class="anchored" data-anchor-id="clone-the-sysml-v2-release-repository">Clone the SysML v2 Release Repository</h3>
 <p>Before installing the kernel, you need to clone the <a href="https://github.com/Systems-Modeling/SysML-v2-Release">SysML v2 Release repository</a>. This repository contains the Jupyter integration scripts, examples, and the SysML textual tooling.</p>
 <p>First, navigate to your desired installation directory and clone the repository:</p>
-<div class="sourceCode" id="annotated-cell-10"><pre class="sourceCode numberSource bash code-annotation-code number-lines code-with-copy code-annotated"><code class="sourceCode bash"><a class="code-annotation-anchor" data-target-cell="annotated-cell-10" data-target-annotation="1" onclick="event.preventDefault();">1</a><span id="annotated-cell-10-1" class="code-annotation-target"><a href="#annotated-cell-10-1"></a><span class="bu">cd</span> PATH</span>
-<span id="annotated-cell-10-2"><a href="#annotated-cell-10-2"></a><span class="fu">git</span> clone https://github.com/Systems-Modeling/SysML-v2-Release</span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="annotated-cell-13"><pre class="sourceCode numberSource bash code-annotation-code number-lines code-with-copy code-annotated"><code class="sourceCode bash"><a class="code-annotation-anchor" data-target-cell="annotated-cell-13" data-target-annotation="1" onclick="event.preventDefault();">1</a><span id="annotated-cell-13-1" class="code-annotation-target"><a href="#annotated-cell-13-1"></a><span class="bu">cd</span> PATH</span>
+<span id="annotated-cell-13-2"><a href="#annotated-cell-13-2"></a><span class="fu">git</span> clone https://github.com/Systems-Modeling/SysML-v2-Release</span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <dl class="code-annotation-container-grid">
-<dt data-target-cell="annotated-cell-10" data-target-annotation="1">1</dt>
+<dt data-target-cell="annotated-cell-13" data-target-annotation="1">1</dt>
 <dd>
-<span data-code-cell="annotated-cell-10" data-code-lines="1" data-code-annotation="1">Replace <code>PATH</code> with your desired installation directory.</span>
+<span data-code-cell="annotated-cell-13" data-code-lines="1" data-code-annotation="1">Replace <code>PATH</code> with your desired installation directory.</span>
 </dd>
 </dl>
 </section>
 <section id="install-the-sysmlv2-jupyter-kernel" class="level3">
 <h3 class="anchored" data-anchor-id="install-the-sysmlv2-jupyter-kernel">Install the SysMLv2 Jupyter Kernel</h3>
 <p>Navigate to the Jupyter installation directory within the cloned repository and run the installation script:</p>
-<div class="sourceCode" id="cb9"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb9-1"><a href="#cb9-1"></a><span class="bu">cd</span> SysML-v2-Release/install/jupyter</span>
-<span id="cb9-2"><a href="#cb9-2"></a><span class="fu">chmod</span> +x ./install.sh</span>
-<span id="cb9-3"><a href="#cb9-3"></a><span class="ex">./install.sh</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb12"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb12-1"><a href="#cb12-1"></a><span class="bu">cd</span> SysML-v2-Release/install/jupyter</span>
+<span id="cb12-2"><a href="#cb12-2"></a><span class="fu">chmod</span> +x ./install.sh</span>
+<span id="cb12-3"><a href="#cb12-3"></a><span class="ex">./install.sh</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="ensure-kernel-registration" class="level3">
 <h3 class="anchored" data-anchor-id="ensure-kernel-registration">Ensure Kernel Registration</h3>
 <p>Running the installation script places the SysMLv2 Jupyter kernel on your system, but it’s important to verify that Jupyter actually recognizes it. The kernel must be correctly registered so Jupyter knows how to launch the SysML engine, where the Java runtime is located, and which classpath to use.</p>
-<div class="sourceCode" id="cb10"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb10-1"><a href="#cb10-1"></a><span class="ex">jupyter</span> kernelspec list</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb13"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb13-1"><a href="#cb13-1"></a><span class="ex">jupyter</span> kernelspec list</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>If the SysML kernel does not appear, or if you notice that the kernelspec path points to a stale directory (e.g., a conda cache), you can refresh the registration by reinstalling the Jupyter integration layer:</p>
-<div class="sourceCode" id="cb11"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb11-1"><a href="#cb11-1"></a><span class="ex">conda</span> install <span class="at">-c</span> conda-forge jupyter-sysml-kernel <span class="at">--force-reinstall</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb14"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb14-1"><a href="#cb14-1"></a><span class="ex">conda</span> install <span class="at">-c</span> conda-forge jupyter-sysml-kernel <span class="at">--force-reinstall</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>This step does not replace the SysML v2 kernel you cloned earlier. Instead, it ensures that Jupyter’s kernel registry is in a clean and consistent state so the SysML kernel starts reliably.</p>
 </section>
 </section>
